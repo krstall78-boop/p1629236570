@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>إتمام الطلب - متجر كرستال بلس</title>
+    <style>
+        :root { --salla-green: #00b286; --salla-bg: #f8f8f8; }
+        body { font-family: system-ui, sans-serif; background: var(--salla-bg); margin: 0; padding: 20px; text-align: center; }
+        .checkout-box { max-width: 500px; margin: 40px auto; background: #fff; padding: 30px; border-radius: 10px; border: 1px solid #eee; }
+        h2 { font-size: 18px; color: #333; margin-bottom: 20px; }
+        input { width: 100%; padding: 12px; margin: 10px 0; border: 1px solid #ddd; border-radius: 5px; box-sizing: border-box; text-align: right; }
+        .btn-pay { display: block; width: 100%; background: var(--salla-green); color: #fff; padding: 15px; border: none; border-radius: 8px; font-weight: bold; cursor: pointer; font-size: 16px; margin-top: 20px; text-decoration: none; }
+    </style>
+</head>
+<body>
+    <div class="checkout-box">
+        <h2>تفاصيل الشحن</h2>
+        <input type="text" placeholder="الاسم الكامل">
+        <input type="text" placeholder="رقم الجوال">
+        <input type="text" placeholder="المدينة">
+        <input type="text" placeholder="العنوان (الحي - الشارع)">
+        <a href="javascript:void(0)" onclick="alert('شكراً لثقتكم! سيتم التواصل معكم لتأكيد الطلب.')" class="btn-pay">تأكيد الطلب والدفع</a>
+        <div style="margin-top: 15px;">
+            <img src="payment-methods.png.png" style="width: 200px;" alt="طرق الدفع">
+        </div>
+    </div>
+</body>
+</html>
