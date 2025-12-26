@@ -57,6 +57,35 @@
       line-height:1.75;
     }
     a{color:inherit; text-decoration:none;}
+    
+    /* Header & Logo Styles */
+    header.site-header{
+      background:#fff;
+      border-bottom:1px solid var(--line);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    header.site-header .wrap{
+      max-width:1100px;
+      margin:0 auto;
+      padding:10px 16px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:12px;
+    }
+    .brand{
+      display:flex;
+      align-items:center;
+    }
+    /* تعديل مقاس اللوجو الجديد ليكون واضحاً ومتناسقاً */
+    .brand img.main-logo {
+      height: 55px;
+      width: auto;
+      object-fit: contain;
+    }
+
     .topbar{
       background:#fff;
       border-bottom:1px solid var(--line);
@@ -70,84 +99,30 @@
       display:flex;
       align-items:center;
       justify-content:space-between;
-      gap:12px;
-    }
-    .topbar .left{
-      display:flex;
-      align-items:center;
-      gap:16px;
-      flex-wrap:wrap;
-    }
-    .topbar .chip{
-      display:flex;
-      align-items:center;
-      gap:8px;
-      white-space:nowrap;
     }
     .dot{
       width:7px;height:7px;border-radius:50%;
       background:var(--primary);
       display:inline-block;
+      margin-left: 5px;
     }
     .ltr{direction:ltr; unicode-bidi:bidi-override;}
-    header.site-header{
-      background:#fff;
-      border-bottom:1px solid var(--line);
-      position: sticky;
-      top: 0;
-      z-index: 100;
-    }
-    header.site-header .wrap{
-      max-width:1100px;
-      margin:0 auto;
-      padding:14px 16px;
-      display:flex;
-      align-items:center;
-      justify-content:space-between;
-      gap:12px;
-    }
-    .brand{
-      display:flex;
-      align-items:center;
-      gap:12px;
-    }
-    .brand img{
-      width:46px;height:46px;
-      border-radius:12px;
-      object-fit:cover;
-      border:1px solid var(--line);
-    }
-    .brand .name{
-      font-weight:800;
-      color:var(--text);
-      line-height:1.2;
-    }
-    .brand .sub{
-      font-size:12px;
-      color:var(--muted);
-      margin-top:2px;
-    }
+
     .search{
       flex:1;
       display:flex;
       justify-content:center;
     }
     .search input{
-      width:min(640px,100%);
+      width:min(500px,100%);
       border:1px solid var(--line);
       background:var(--soft);
-      padding:10px 14px;
+      padding:10px 18px;
       border-radius:999px;
       outline:none;
       font-size:14px;
     }
-    .actions{
-      display:flex;
-      align-items:center;
-      gap:10px;
-      justify-content:flex-end;
-    }
-    .iconbtn{
+    .actions .iconbtn{
       width:40px;height:40px;
       display:inline-flex;
       align-items:center;
@@ -158,200 +133,73 @@
       cursor:pointer;
     }
 
-    .crumbs{
-      max-width:1100px;
-      margin:0 auto;
-      padding:14px 16px 0;
-      color:var(--muted);
-      font-size:13px;
-      display:flex;
-      gap:8px;
-      align-items:center;
-      flex-wrap:wrap;
-    }
-    .crumbs a{color:var(--primary);}
-    .crumbs .sep{opacity:.6}
-
+    /* Product Section */
     .page{
       max-width:1100px;
       margin:0 auto;
-      padding:18px 16px 40px;
+      padding:20px 16px;
     }
-
     .product-card{
       background:var(--card);
       border:1px solid var(--line);
       border-radius:var(--radius);
       box-shadow:var(--shadow);
-      padding:22px;
+      padding:25px;
     }
     .grid{
       display:grid;
       grid-template-columns: 1.1fr 1fr;
-      gap:30px;
-      align-items:start;
+      gap:35px;
     }
-    @media (max-width: 900px){
-      .grid{grid-template-columns:1fr}
-    }
+    @media (max-width: 900px){ .grid{grid-template-columns:1fr} }
 
-    .imgbox{
-      background:#fff;
-      border:1px solid var(--line);
-      border-radius:16px;
-      overflow:hidden;
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      padding:10px;
-    }
     .imgbox img{
       width:100%;
-      height:auto;
-      object-fit:contain;
-      border-radius: 8px;
-    }
-
-    .p-title{
-      margin:0;
-      font-size:24px;
-      font-weight:800;
-      line-height:1.45;
-    }
-    .p-brand{
-      font-size:14px;
-      color:var(--muted);
-      margin: 8px 0;
-    }
-    .badge{
-      display:inline-flex;
-      align-items:center;
-      gap:8px;
-      font-size:13px;
-      color:#0f5132;
-      background:#e9f7ee;
-      border:1px solid #ccebd8;
-      padding:6px 14px;
-      border-radius:999px;
-      margin:10px 0;
-    }
-    .price-box{
-      margin: 15px 0;
-      padding: 15px;
-      background: var(--soft);
       border-radius: 12px;
-    }
-    .price{
-      font-size:28px;
-      font-weight:900;
-      color: var(--primary);
-    }
-    .price small{
-      font-weight:500;
-      color:var(--muted);
-      font-size:13px;
-      margin-right:6px;
+      border: 1px solid var(--line);
     }
 
-    .desc{
-      color:var(--text);
-      font-size:15px;
-      margin:15px 0;
+    .price-box{
+      margin: 20px 0;
+      padding: 15px;
+      background: #f9fafb;
+      border-radius: 12px;
+      border: 1px dashed var(--line);
     }
-
-    .section-title{
-      color:var(--text);
-      font-weight:800;
-      margin:15px 0 8px;
-      font-size:15px;
-      border-right: 3px solid var(--primary);
-      padding-right: 10px;
-    }
-    .bullets{
-      margin:0;
-      padding-right:18px;
-      color:#374151;
-      font-size:14px;
-    }
-    .bullets li{margin:8px 0}
-
-    .buybox{
-      margin-top:20px;
-      border:1px solid var(--line);
-      border-radius:14px;
-      padding:20px;
-      background:#fff;
-    }
-    .cta-row{
-      display:flex;
-      align-items:center;
-      gap:12px;
-    }
-    /* تعديل زر الإضافة للسلة ليكون رابطاً مباشراً */
+    .price{ font-size:30px; font-weight:900; color: var(--primary); }
+    
     .btn-add{
-      flex:1;
-      height:50px;
+      width: 100%;
+      height:55px;
       border:0;
-      border-radius:10px;
+      border-radius:12px;
       background:var(--primary);
       color:#fff;
       font-weight:900;
-      font-size:16px;
+      font-size:18px;
       display: flex;
       align-items: center;
       justify-content: center;
-      transition: background 0.3s;
+      transition: 0.3s;
+      cursor: pointer;
     }
-    .btn-add:hover{background:#018a36}
+    .btn-add:hover{ background:#018a36; transform: translateY(-2px); }
 
-    .paymethods{
-      display:flex;
-      gap:10px;
-      flex-wrap:wrap;
-      margin-top:20px;
-      justify-content: center;
+    footer{
+      background: #fff;
+      border-top: 1px solid var(--line);
+      padding: 40px 0 20px;
+      margin-top: 50px;
     }
-    .paymethods img{height:20px; opacity:0.8;}
-
-    footer.footer{
-      margin-top:40px;
-      background:#fff;
-      border-top:1px solid var(--line);
+    .footer-wrap{
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 16px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 40px;
     }
-    .footer .wrap{
-      max-width:1100px;
-      margin:0 auto;
-      padding:30px 16px;
-    }
-    .footer-top{
-      display:grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap:30px;
-      padding-bottom:20px;
-      border-bottom:1px solid var(--line);
-    }
-    .ftitle{
-      font-weight:900;
-      margin-bottom:15px;
-      font-size:15px;
-    }
-    .flist{
-      list-style:none;
-      margin:0;
-      padding:0;
-      display:flex;
-      flex-direction:column;
-      gap:12px;
-      font-size:14px;
-    }
-    .flist a:hover{color:var(--primary)}
-    
-    .copyright{
-      padding:20px 0;
-      text-align:center;
-      color:var(--muted);
-      font-size:12px;
-    }
+    .footer-logo { height: 50px; margin-bottom: 15px; }
   </style>
 </head>
 
@@ -359,26 +207,19 @@
 
   <div class="topbar">
     <div class="wrap">
-      <div class="left">
-        <div class="chip"><span class="dot"></span> شحن سريع لكافة أنحاء المملكة</div>
-        <div class="chip ltr">+966559032548</div>
-      </div>
-      <div class="chip">دفع آمن 100%</div>
+      <div class="chip"><span class="dot"></span> شحن سريع لكافة أنحاء المملكة</div>
+      <div class="chip ltr">+966559032548</div>
     </div>
   </div>
 
   <header class="site-header">
     <div class="wrap">
       <a href="https://kristalpls.com/" class="brand">
-        <img src="https://cdn.salla.sa/vDBOo/085ae502-5bca-4364-adb1-5fe8147b2a7a-1000x903.13111545988-8nKTTAaDlF7gTEBpmGbKD4vQScFNJo2562wfn7WB.jpg" alt="Logo">
-        <div>
-          <div class="name">kristalpls</div>
-          <div class="sub">متجر كرستال بلس</div>
-        </div>
+        <img src="https://raw.githubusercontent.com/kristall78/boop.github.io/main/p1629236570/%D8%A7%D9%84%D8%AA%D9%80%D9%80%D9%80%D9%85%D9%80%D9%80%D9%8A%D9%81%D9%80%D9%80%D8%B2%20(59).png" alt="متجر كرستال بلس" class="main-logo">
       </a>
 
       <div class="search">
-        <input type="search" placeholder="ابحث عن منتج...">
+        <input type="search" placeholder="ابحث عن منتجات مكتبية...">
       </div>
 
       <div class="actions">
@@ -387,60 +228,42 @@
     </div>
   </header>
 
-  <div class="crumbs">
-    <a href="https://kristalpls.com/">الرئيسية</a>
-    <span class="sep">/</span>
-    <span>أدوات مكتبية</span>
-    <span class="sep">/</span>
-    <span>حامل أقلام مكتبي</span>
-  </div>
-
   <main class="page">
     <div class="product-card">
       <div class="grid">
         <div class="imgbox">
-          <img src="https://cdn.salla.sa/vDBOo/085ae502-5bca-4364-adb1-5fe8147b2a7a-1000x903.13111545988-8nKTTAaDlF7gTEBpmGbKD4vQScFNJo2562wfn7WB.jpg" alt="حامل أقلام مكتبي شبكي معدني">
+          <img src="https://cdn.salla.sa/vDBOo/085ae502-5bca-4364-adb1-5fe8147b2a7a-1000x903.13111545988-8nKTTAaDlF7gTEBpmGbKD4vQScFNJo2562wfn7WB.jpg" alt="حامل أقلام مكتبي">
         </div>
 
         <div>
-          <h1 class="p-title">حامل أقلام مكتبي شبكي معدني - أسود مطفي</h1>
-          <div class="p-brand">الماركة: كرستال بلس</div>
+          <h1 class="p-title" style="font-size: 26px; margin-bottom: 5px;">حامل أقلام مكتبي شبكي معدني - أسود مطفي</h1>
+          <p style="color: var(--muted); margin-bottom: 15px;">القسم: أدوات مكتبية</p>
           
-          <div class="badge"><span class="dot"></span> متوفر في المخزون</div>
+          <div style="color:#0f5132; background:#e9f7ee; padding:5px 12px; border-radius:5px; display:inline-block; font-size:13px;">
+            ✔ متوفر في المخزون
+          </div>
 
           <div class="price-box">
-             <div class="price">5.00 ر.س <small>شامل الضريبة</small></div>
+             <div class="price">5.00 ر.س</div>
+             <small style="color: var(--muted);">السعر شامل ضريبة القيمة المضافة</small>
           </div>
 
           <p class="desc">
-            نظم مكتبك بلمسة عصرية مع حامل الأقلام الشبكي المتين. مصمم بهيكل معدني مقاوم للصدأ وقاعدة ثابتة تمنع الانزلاق، مثالي للمكاتب المدرسية والعملية.
+            حافظ على تنظيم أدواتك مع هذا المنظم المعدني الشبكي. يتميز بتصميم دائري عصري يناسب كافة أنواع المكاتب، مصنوع من مواد عالية الجودة تدوم طويلاً.
           </p>
 
-          <div class="section-title">المواصفات الأساسية</div>
-          <ul class="bullets">
-            <li><strong>المادة:</strong> معدن شبكي معالج ضد الصدأ.</li>
-            <li><strong>اللون:</strong> أسود مطفي فاخر.</li>
-            <li><strong>التصميم:</strong> حواف آمنة وقاعدة دائرية مستقرة.</li>
-          </ul>
-
-          <div class="section-title">الشحن والضمان</div>
-          <ul class="bullets">
-            <li>توصيل خلال 2 - 5 أيام عمل لكافة مناطق المملكة.</li>
-            <li>سياسة استبدال واسترجاع مرنة خلال 7 أيام.</li>
-          </ul>
-
           <div class="buybox">
-            <div class="cta-row">
-              <a href="https://kristalpls.com/cart" class="btn-add">
-                إضافة للسلة
-              </a>
-            </div>
-
-            <div class="paymethods">
-              <img src="https://s.salla.network/assets/images/payment/mada.svg" alt="mada">
-              <img src="https://s.salla.network/assets/images/payment/visa.svg" alt="visa">
-              <img src="https://s.salla.network/assets/images/payment/stcpay.svg" alt="stcpay">
-              <img src="https://s.salla.network/assets/images/payment/applepay.svg" alt="applepay">
+            <a href="https://kristalpls.com/cart" class="btn-add">
+              إضافة للسلة
+            </a>
+            
+            <div style="margin-top: 20px; text-align: center;">
+                <p style="font-size: 12px; color: var(--muted); margin-bottom: 10px;">طرق الدفع المتاحة</p>
+                <div style="display:flex; gap:10px; justify-content:center;">
+                    <img src="https://s.salla.network/assets/images/payment/mada.svg" width="35" alt="مدى">
+                    <img src="https://s.salla.network/assets/images/payment/applepay.svg" width="35" alt="ابل باي">
+                    <img src="https://s.salla.network/assets/images/payment/stcpay.svg" width="35" alt="stc pay">
+                </div>
             </div>
           </div>
         </div>
@@ -448,32 +271,30 @@
     </div>
   </main>
 
-  <footer class="footer">
-    <div class="wrap">
-      <div class="footer-top">
-        <div>
-          <div class="ftitle">خدمة العملاء</div>
-          <ul class="flist">
-            <li><a href="https://kristalpls.com/shipping-policy/page-935855241">سياسة الشحن</a></li>
-            <li><a href="https://kristalpls.com/refund-policy/page-1047709984">سياسة الاسترجاع</a></li>
-            <li><a href="https://kristalpls.com/privacy-policy/page-1561588918">سياسة الخصوصية</a></li>
-          </ul>
-        </div>
-        <div>
-          <div class="ftitle">تواصل معنا</div>
-          <ul class="flist">
-            <li>واتساب: +966559032548</li>
-            <li>ايميل: info@kristalpls.com</li>
-          </ul>
-        </div>
-        <div>
-          <div class="ftitle">عن المتجر</div>
-          <p style="font-size: 13px; color: var(--muted);">مؤسسة أريج عبدالله المالكي التجارية | سجل تجاري: 7052755050. متجر سعودي متخصص في توفير أفضل الأدوات المكتبية.</p>
-        </div>
+  <footer>
+    <div class="footer-wrap">
+      <div>
+        <img src="https://raw.githubusercontent.com/kristall78/boop.github.io/main/p1629236570/%D8%A7%D9%84%D8%AA%D9%80%D9%80%D9%80%D9%85%D9%80%D9%80%D9%8A%D9%81%D9%80%D9%80%D8%B2%20(59).png" alt="Logo" class="footer-logo">
+        <p style="font-size: 13px; color: var(--muted);">متجر كرستال بلس هو وجهتك الأولى للحصول على أفضل الأدوات المكتبية والقرطاسية داخل المملكة العربية السعودية.</p>
       </div>
-      <div class="copyright">
-        جميع الحقوق محفوظة لمتجر كرستال بلس © 2025
+      <div>
+        <h4 style="margin-bottom: 15px;">روابط سريعة</h4>
+        <ul style="list-style: none; padding: 0; font-size: 14px; line-height: 2;">
+          <li><a href="https://kristalpls.com/shipping-policy/page-935855241">سياسة الشحن</a></li>
+          <li><a href="https://kristalpls.com/refund-policy/page-1047709984">سياسة الاستبدال</a></li>
+          <li><a href="https://kristalpls.com/privacy-policy/page-1561588918">سياسة الخصوصية</a></li>
+        </ul>
       </div>
+      <div>
+        <h4 style="margin-bottom: 15px;">بيانات النشاط</h4>
+        <p style="font-size: 13px; color: var(--muted);">
+          سجل تجاري: 7052755050<br>
+          الرياض - المملكة العربية السعودية
+        </p>
+      </div>
+    </div>
+    <div style="text-align: center; margin-top: 30px; font-size: 12px; color: var(--muted); border-top: 1px solid var(--line); padding-top: 20px;">
+        جميع الحقوق محفوظة | متجر كرستال بلس 2025
     </div>
   </footer>
 
