@@ -6,13 +6,32 @@
     <title>إتمام الطلب - متجر كرستال بلس</title>
     <style>
         :root { --salla-green: #00b286; --salla-bg: #f8f8f8; }
-        body { font-family: system-ui, sans-serif; background: var(--salla-bg); margin: 0; padding: 20px; }
+        body { font-family: system-ui, -apple-system, sans-serif; background: var(--salla-bg); margin: 0; padding: 20px; }
         .checkout-container { max-width: 500px; margin: 40px auto; background: #fff; padding: 30px; border-radius: 10px; border: 1px solid #eee; box-shadow: 0 4px 10px rgba(0,0,0,0.05); }
         h2 { text-align: center; color: #333; margin-bottom: 25px; font-size: 18px; }
         .form-group { margin-bottom: 15px; text-align: right; }
         input { width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 6px; box-sizing: border-box; font-size: 14px; background: #fff; outline: none; }
-        .btn-confirm { display: block; width: 100%; background: var(--salla-green); color: #fff; padding: 15px; border: none; border-radius: 8px; font-weight: bold; cursor: pointer; text-decoration: none; text-align: center; font-size: 16px; margin-top: 10px; appearance: none; -webkit-appearance: none; }
+        
+        /* تصميم الزر ليعمل كزر إرسال حقيقي */
+        .btn-confirm { 
+            display: block; 
+            width: 100%; 
+            background: var(--salla-green); 
+            color: #fff; 
+            padding: 15px; 
+            border: none; 
+            border-radius: 8px; 
+            font-weight: bold; 
+            cursor: pointer; 
+            font-size: 16px; 
+            text-align: center;
+            text-decoration: none;
+            appearance: none;
+            -webkit-appearance: none;
+        }
         .btn-confirm:hover { opacity: 0.9; }
+        .payment-icons { text-align: center; margin-top: 25px; }
+        .payment-icons img { width: 220px; opacity: 0.8; }
     </style>
 </head>
 <body>
@@ -20,7 +39,7 @@
     <div class="checkout-container">
         <h2>تفاصيل عنوان الشحن</h2>
         
-        <form action="/" method="GET">
+        <form action="https://kristalpls.com/" method="GET">
             <div class="form-group">
                 <input type="text" placeholder="الاسم الكامل" required>
             </div>
@@ -37,8 +56,8 @@
             <button type="submit" class="btn-confirm">تأكيد الطلب والدفع</button>
         </form>
 
-        <div style="text-align:center; margin-top:25px;">
-            <img src="https://github.com/krstall78-boop/p1629236570/blob/main/payment-methods.png.png?raw=true" alt="طرق الدفع" style="width:220px; opacity:0.8;">
+        <div class="payment-icons">
+            <img src="https://github.com/krstall78-boop/p1629236570/blob/main/payment-methods.png.png?raw=true" alt="طرق الدفع">
         </div>
     </div>
 
