@@ -6,29 +6,29 @@
     <title>سلة المشتريات - متجر كرستال بلس</title>
     <style>
         :root { --salla-green: #00b286; --salla-bg: #f8f8f8; }
-        body { font-family: system-ui, sans-serif; background: var(--salla-bg); margin: 0; padding: 20px; text-align: center; }
-        .cart-container { max-width: 600px; margin: 40px auto; background: #fff; padding: 20px; border-radius: 10px; border: 1px solid #eee; }
+        body { font-family: system-ui, sans-serif; background: var(--salla-bg); margin: 0; padding: 20px; }
+        .cart-container { max-width: 600px; margin: 40px auto; background: #fff; padding: 25px; border-radius: 10px; border: 1px solid #eee; text-align: center; }
         .cart-item { display: flex; align-items: center; justify-content: space-between; padding: 15px; border-bottom: 1px solid #f5f5f5; }
-        .cart-item img { width: 60px; border-radius: 5px; }
+        .cart-item img { width: 70px; border-radius: 5px; border: 1px solid #eee; }
         .cart-details { flex: 1; text-align: right; padding-right: 15px; }
         .cart-details h4 { margin: 0; font-size: 14px; color: #333; }
         .price { color: var(--salla-green); font-weight: bold; margin-top: 5px; }
-        .cart-summary { margin-top: 20px; padding-top: 15px; border-top: 2px solid #eee; text-align: right; font-weight: bold; }
-        .btn-checkout { display: block; width: 100%; background: var(--salla-green); color: #fff; padding: 15px; border: none; border-radius: 8px; font-weight: bold; cursor: pointer; text-decoration: none; margin-top: 20px; text-align: center; }
+        .cart-summary { margin: 20px 0; padding-top: 15px; border-top: 2px solid #eee; text-align: right; font-weight: bold; font-size: 16px; }
+        .btn-checkout { display: block; width: 100%; background: var(--salla-green); color: #fff; padding: 15px; border: none; border-radius: 8px; font-weight: bold; cursor: pointer; text-decoration: none; text-align: center; box-sizing: border-box; }
     </style>
 </head>
 <body>
 
-    <h3 style="color:#444;">سلة المشتريات</h3>
-
     <div class="cart-container">
+        <h3 style="margin-bottom: 25px; color: #444;">سلة المشتريات</h3>
+        
         <div class="cart-item">
-            <img src="https://cdn.salla.sa/vDBOo/085ae502-5bca-4364-adb1-5fe8147b2a7a-1000x903.13111545988-8nKTTAaDlF7gTEBpmGbKD4vQScFNJo2562wfn7WB.jpg" alt="منتج">
+            <img src="https://cdn.salla.sa/vDBOo/085ae502-5bca-4364-adb1-5fe8147b2a7a-1000x903.13111545988-8nKTTAaDlF7gTEBpmGbKD4vQScFNJo2562wfn7WB.jpg" alt="حامل أقلام">
             <div class="cart-details">
                 <h4>حامل أقلام مكتبي شبكي معدني - أسود مطفي</h4>
                 <div class="price">5.00 ر.س</div>
             </div>
-            <div style="font-size: 13px; color: #666;">الكمية: 1</div>
+            <div style="font-size: 14px; color: #666;">الكمية: 1</div>
         </div>
 
         <div class="cart-summary">
@@ -36,8 +36,7 @@
         </div>
 
         <a href="checkout.html" class="btn-checkout">إتمام الطلب</a>
-        
-        <a href="index.html" style="display:block; margin-top:15px; color:#999; text-decoration:none; font-size:12px;">العودة للمتجر</a>
+        <a href="index.html" style="display:block; margin-top:15px; color:#999; text-decoration:none; font-size:13px;">العودة للمتجر</a>
     </div>
 
 </body>
