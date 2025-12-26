@@ -11,23 +11,7 @@
         h2 { text-align: center; color: #333; margin-bottom: 25px; font-size: 18px; }
         .form-group { margin-bottom: 15px; text-align: right; }
         input { width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 6px; box-sizing: border-box; font-size: 14px; background: #fff; outline: none; }
-        
-        .btn-confirm { 
-            display: block; 
-            width: 100%; 
-            background: var(--salla-green); 
-            color: #fff; 
-            padding: 15px; 
-            border: none; 
-            border-radius: 8px; 
-            font-weight: bold; 
-            cursor: pointer; 
-            font-size: 16px; 
-            text-align: center;
-            text-decoration: none;
-            appearance: none;
-            -webkit-appearance: none;
-        }
+        .btn-confirm { display: block; width: 100%; background: var(--salla-green); color: #fff; padding: 15px; border: none; border-radius: 8px; font-weight: bold; cursor: pointer; text-decoration: none; text-align: center; font-size: 16px; margin-top: 10px; }
         .btn-confirm:hover { opacity: 0.9; }
         .payment-icons { text-align: center; margin-top: 25px; }
         .payment-icons img { width: 220px; opacity: 0.8; }
@@ -38,19 +22,11 @@
     <div class="checkout-container">
         <h2>تفاصيل عنوان الشحن</h2>
         
-        <form action="https://kristalpls.com/" method="GET">
-            <div class="form-group">
-                <input type="text" placeholder="الاسم الكامل" required>
-            </div>
-            <div class="form-group">
-                <input type="tel" placeholder="رقم الجوال" required>
-            </div>
-            <div class="form-group">
-                <input type="text" placeholder="المدينة" required>
-            </div>
-            <div class="form-group">
-                <input type="text" placeholder="العنوان" required>
-            </div>
+        <form action="success.html" method="GET">
+            <div class="form-group"><input type="text" placeholder="الاسم الكامل" required></div>
+            <div class="form-group"><input type="tel" placeholder="رقم الجوال" required></div>
+            <div class="form-group"><input type="text" placeholder="المدينة" required></div>
+            <div class="form-group"><input type="text" placeholder="العنوان" required></div>
 
             <button type="submit" class="btn-confirm" onclick="alert('شكراً لثقتكم! سيتم التواصل معكم لتأكيد الطلب.')">
                 تأكيد الطلب والدفع
