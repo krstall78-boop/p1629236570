@@ -130,6 +130,10 @@
             font-weight: bold;
             cursor: pointer;
             transition: background 0.3s;
+            text-decoration: none;
+            display: block;
+            text-align: center;
+            box-sizing: border-box;
         }
         
         .btn-add-cart:hover { opacity: 0.9; }
@@ -257,7 +261,7 @@
                 • استرداد الأموال: يتم إعادة المبلغ إلى وسيلة الدفع المستخدمة (بطاقة بنكية أو حساب بنكي) خلال مدة تصل إلى 14 يوم عمل من تاريخ قبول طلب الاسترجاع
             </div>
 
-            <button class="btn-add-cart" id="addToCartBtn">إضافة للسلة</button>
+            <a href="cart.html" class="btn-add-cart" id="addToCartBtn">إضافة للسلة</a>
 
             <div class="payment-footer">
                 <p>طرق الدفع المتاحة</p>
@@ -318,14 +322,7 @@
         };
 
         localStorage.setItem('salla_cart_item', JSON.stringify(product));
-        
         this.innerText = "جاري الإضافة...";
-        this.style.background = "#008a68";
-
-        // التحويل لصفحة السلة المحلية في GitHub
-        setTimeout(function() {
-            window.location.href = "cart.html";
-        }, 700);
     });
 </script>
 
