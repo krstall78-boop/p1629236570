@@ -4,35 +4,42 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1.0" />
   <title>حامل أقلام مكتبي شبكي معدني - متجر كرستال بلس</title>
+  
   <style>
-    :root{ --primary:#01a23f; --bg:#f8f9fa; --text:#1a1a1a; --muted:#6c757d; --line:#dee2e6; }
+    :root{ --primary:#01a23f; --bg:#f9fafb; --text:#111827; --muted:#6b7280; --line:#e5e7eb; }
     body{ margin:0; font-family: system-ui, -apple-system, sans-serif; background:var(--bg); color:var(--text); line-height:1.6; }
     .container{ max-width:1000px; margin:0 auto; padding:0 20px; }
-    header{ background:#fff; border-bottom:1px solid var(--line); padding:15px 0; position:sticky; top:0; z-index:100; }
+    
+    header{ background:#fff; border-bottom:1px solid var(--line); padding:12px 0; position:sticky; top:0; z-index:100; }
     .flex-header{ display:flex; align-items:center; justify-content:space-between; gap:20px; }
-    .logo img { height: 45px; width: auto; }
+    .logo img { height: 45px; width: auto; display: block; }
+    
     .search-bar{ flex:1; max-width: 400px; }
-    .search-bar input{ width:100%; padding:8px 15px; border-radius:8px; border:1px solid var(--line); background:#f1f3f5; }
-    
-    .product-grid{ display:grid; grid-template-columns: 1fr 1fr; gap:40px; background:#fff; margin-top:30px; padding:30px; border-radius:15px; border:1px solid var(--line); }
+    .search-bar input{ width:100%; padding:10px 15px; border-radius:10px; border:1px solid var(--line); background:#f3f4f6; outline:none; }
+
+    .product-grid{ display:grid; grid-template-columns: 1fr 1.1fr; gap:40px; background:#fff; margin-top:30px; padding:30px; border-radius:16px; border:1px solid var(--line); box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1); }
     @media (max-width:768px){ .product-grid{grid-template-columns:1fr;} }
-    .product-image img{ width:100%; border-radius:10px; }
-    .status-tag{ color:var(--primary); background:#e6f6ec; padding:4px 12px; border-radius:5px; font-size:12px; font-weight:bold; }
-    .price-tag{ font-size:32px; font-weight:800; color:var(--primary); margin:10px 0; }
-    .btn-cart{ display:block; width:100%; background:var(--primary); color:#fff; text-align:center; padding:15px; border-radius:10px; text-decoration:none; font-weight:bold; font-size:18px; }
     
-    /* Payment Icons Container */
+    .product-image img{ width:100%; border-radius:12px; border:1px solid var(--line); }
+    .status-tag{ color:var(--primary); background:#ecfdf5; padding:4px 12px; border-radius:6px; font-size:12px; font-weight:bold; display:inline-block; }
+    .price-tag{ font-size:32px; font-weight:800; color:var(--primary); margin:15px 0; }
+    
+    .btn-cart{ display:block; width:100%; background:var(--primary); color:#fff; text-align:center; padding:16px; border-radius:12px; text-decoration:none; font-weight:bold; font-size:18px; transition:0.3s; border:none; cursor:pointer; }
+    .btn-cart:hover{ background:#018a36; }
+
+    /* Payment Methods - Guaranteed to Show */
     .payment-methods{ margin-top:25px; text-align:center; border-top:1px solid var(--line); padding-top:20px; }
     .payment-methods p{ font-size:12px; color:var(--muted); margin-bottom:12px; }
-    .icons-row{ display:flex; justify-content:center; gap:15px; flex-wrap: wrap; }
-    .payment-icon { height: 24px; width: auto; display: flex; align-items: center; }
-    .payment-icon svg, .payment-icon img { height: 100%; width: auto; }
+    .icons-row{ display:flex; justify-content:center; gap:12px; align-items:center; flex-wrap: wrap; }
+    .pay-icon { height: 22px; width: auto; }
+    .stc-badge { background:#5a2d82; color:#fff; padding:3px 8px; border-radius:4px; font-size:10px; font-weight:bold; height:18px; display:flex; align-items:center; }
 
-    footer{ background:#fff; margin-top:50px; padding:40px 0; border-top:1px solid var(--line); }
-    .footer-grid{ display:grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap:30px; }
-    h4{ margin-bottom:15px; font-size:16px; color:#333; }
-    ul{ list-style:none; padding:0; font-size:13px; color:var(--muted); line-height:2.2; }
-    a{ color:inherit; text-decoration:none; }
+    footer{ background:#fff; margin-top:60px; padding:50px 0 20px; border-top:1px solid var(--line); }
+    .footer-grid{ display:grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap:40px; }
+    h4{ margin-bottom:18px; font-size:16px; color:#111827; }
+    ul{ list-style:none; padding:0; font-size:14px; color:var(--muted); line-height:2.4; }
+    a{ color:inherit; text-decoration:none; transition:0.2s; }
+    a:hover{ color:var(--primary); }
   </style>
 </head>
 <body>
@@ -40,65 +47,67 @@
   <header>
     <div class="container flex-header">
       <div class="logo">
-        <img src="https://raw.githubusercontent.com/kristall78/boop.github.io/main/p1629236570/%D8%A7%D9%84%D8%AA%D9%80%D9%80%D9%80%D9%85%D9%80%D9%80%D9%8A%D9%81%D9%80%D9%80%8%B2%20(59).png" alt="متجر كرستال بلس">
+        <img src="https://raw.githubusercontent.com/kristall78/boop.github.io/main/p1629236570/%D8%A7%D9%84%D8%AA%D9%80%D9%80%D9%80%D9%85%D9%80%D9%80%D9%8A%D9%81%D9%80%D9%80%B2%20(59).png" alt="Logo">
       </div>
-      <div class="search-bar"><input type="text" placeholder="ابحث عن منتج..."></div>
-      <div style="font-size:20px;">🛒</div>
+      <div class="search-bar">
+        <input type="text" placeholder="ابحث عن أدوات مكتبية...">
+      </div>
+      <div style="font-size:22px;">🛒</div>
     </div>
   </header>
 
-  <div class="container">
+  <main class="container">
     <div class="product-grid">
       <div class="product-image">
         <img src="https://cdn.salla.sa/vDBOo/085ae502-5bca-4364-adb1-5fe8147b2a7a-1000x903.13111545988-8nKTTAaDlF7gTEBpmGbKD4vQScFNJo2562wfn7WB.jpg" alt="حامل أقلام">
       </div>
+      
       <div class="product-info">
         <span class="status-tag">✔ متوفر في المخزون</span>
-        <h1 style="font-size:24px; margin:15px 0 5px;">حامل أقلام مكتبي شبكي معدني - أسود مطفي</h1>
-        <p style="color:var(--muted); font-size:14px;">القسم: أدوات مكتبية</p>
+        <h1 style="font-size:26px; margin:15px 0 5px;">حامل أقلام مكتبي شبكي معدني - أسود مطفي</h1>
+        <p style="color:var(--muted); font-size:14px; margin-bottom:20px;">القسم: أدوات مكتبية</p>
+        
         <div class="price-tag">5.00 ر.س</div>
-        <p style="font-size:14px; color:#444;">منظم مكتبي بتصميم عصري من المعدن الشبكي المتين، يساعدك على ترتيب أقلامك وأدواتك المكتبيّة بشكل أنيق ومنظم.</p>
+        <p style="font-size:15px; color:#4b5563; margin-bottom:25px;">منظم مكتبي شبكي يوفر مساحة مثالية لتنظيم الأقلام والمقصات، مصنوع من معدن متين مطلي باللون الأسود المقاوم للصدأ.</p>
+        
         <a href="https://kristalpls.com/cart" class="btn-cart">إضافة للسلة</a>
 
         <div class="payment-methods">
           <p>طرق الدفع الآمنة</p>
           <div class="icons-row">
-            <div class="payment-icon">
-              <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/Mada_Logo.svg" alt="Mada">
-            </div>
-            <div class="payment-icon">
-              <img src="https://upload.wikimedia.org/wikipedia/commons/d/d6/Visa_2021.svg" alt="Visa">
-            </div>
-            <div class="payment-icon">
-              <img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Mastercard-logo.svg" alt="Mastercard">
-            </div>
-            <div class="payment-icon">
-              <img src="https://upload.wikimedia.org/wikipedia/commons/b/b0/Apple_Pay_logo.svg" alt="Apple Pay">
-            </div>
-            <div class="payment-icon" style="background: #5a2d82; color: white; padding: 2px 8px; border-radius: 4px; font-weight: bold; font-size: 10px;">stc pay</div>
+            <img class="pay-icon" src="https://raw.githubusercontent.com/a-f-s-a-n-a/payment-icons/master/png/mada.png" alt="Mada">
+            <img class="pay-icon" src="https://upload.wikimedia.org/wikipedia/commons/b/b0/Apple_Pay_logo.svg" alt="Apple Pay">
+            <img class="pay-icon" src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Visa_Inc._logo.svg" alt="Visa">
+            <img class="pay-icon" src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Mastercard-logo.svg" alt="Mastercard">
+            <span class="stc-badge">stc pay</span>
           </div>
         </div>
       </div>
     </div>
-  </div>
+  </main>
 
   <footer>
     <div class="container">
       <div class="footer-grid">
         <div>
-          <img src="https://raw.githubusercontent.com/kristall78/boop.github.io/main/p1629236570/%D8%A7%D9%84%D8%AA%D9%80%D9%80%D9%80%D9%85%D9%80%D9%80%D9%8A%D9%81%D9%80%D9%80%B2%20(59).png" height="35">
-          <p style="font-size:12px; color:var(--muted); margin-top:10px;">متجر كرستال بلس وجهتك للأدوات المكتبية المتميزة في السعودية.</p>
+          <img src="https://raw.githubusercontent.com/kristall78/boop.github.io/main/p1629236570/%D8%A7%D9%84%D8%AA%D9%80%D9%80%D9%80%D9%85%D9%80%D9%80%D9%8A%D9%81%D9%80%D9%80%B2%20(59).png" height="40" alt="Logo">
+          <p style="font-size:13px; color:var(--muted); margin-top:15px;">متجر كرستال بلس هو وجهتكم المفضلة للأدوات المكتبيّة والقرطاسية في المملكة العربية السعودية.</p>
         </div>
         <div>
-          <h4>روابط هامة</h4>
+          <h4>روابط سريعة</h4>
           <ul>
-            <li><a href="https://kristalpls.com/shipping-policy">سياسة الشحن والتوصيل</a></li>
-            <li><a href="https://kristalpls.com/refund-policy">سياسة الاستبدال والاسترجاع</a></li>
+            <li><a href="https://kristalpls.com/shipping-policy">سياسة الشحن</a></li>
+            <li><a href="https://kristalpls.com/refund-policy">سياسة الاسترجاع</a></li>
+            <li><a href="https://kristalpls.com/privacy-policy">سياسة الخصوصية</a></li>
           </ul>
         </div>
         <div>
-          <h4>تواصل معنا</h4>
-          <ul><li>الرياض، السعودية</li><li>info@kristalpls.com</li></ul>
+          <h4>بيانات التواصل</h4>
+          <ul>
+            <li>الرياض، السعودية</li>
+            <li>سجل تجاري: 7052755050</li>
+            <li>info@kristalpls.com</li>
+          </ul>
         </div>
       </div>
       <div style="text-align:center; padding-top:30px; font-size:11px; color:var(--muted); border-top:1px solid var(--line); margin-top:30px;">
@@ -106,5 +115,6 @@
       </div>
     </div>
   </footer>
+
 </body>
 </html>
