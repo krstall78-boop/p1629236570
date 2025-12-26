@@ -22,21 +22,21 @@
 
         .container { max-width: 1100px; margin: 0 auto; padding: 0 15px; }
 
-        /* Header - Salla Style */
+        /* Header */
         header { background: #fff; padding: 15px 0; border-bottom: 1px solid var(--border-color); }
         .header-flex { display: flex; align-items: center; justify-content: space-between; }
-        .logo img { height: 45px; }
+        .logo img { height: 40px; display: block; }
         .search-container { flex: 0 0 45%; position: relative; }
         .search-container input {
-            width: 100%; padding: 10px 40px 10px 15px;
-            background: #f5f5f5; border: none; border-radius: 25px; outline: none;
+            width: 100%; padding: 10px 15px;
+            background: #f5f5f5; border: none; border-radius: 25px; outline: none; font-size: 13px;
         }
 
         /* Breadcrumbs */
         .breadcrumbs { padding: 20px 0; font-size: 13px; color: var(--text-muted); }
         .breadcrumbs a { color: var(--salla-green); text-decoration: none; margin: 0 5px; }
 
-        /* Product Main Section */
+        /* Product Card */
         .product-card {
             background: #fff; border-radius: 10px; padding: 30px;
             display: grid; grid-template-columns: 1fr 1fr; gap: 40px;
@@ -49,46 +49,44 @@
 
         /* Product Info */
         .product-details .brand { color: var(--text-muted); font-size: 14px; margin-bottom: 5px; }
-        .product-details h1 { font-size: 22px; margin: 0 0 10px; }
+        .product-details h1 { font-size: 20px; margin: 0 0 10px; font-weight: bold; }
         .tax-tag { font-size: 12px; color: var(--text-muted); margin-bottom: 15px; }
         .availability { display: inline-block; background: #e6f7f3; color: var(--salla-green); padding: 5px 12px; border-radius: 5px; font-size: 13px; font-weight: bold; margin-bottom: 20px; }
         
         .price-box { margin-bottom: 25px; }
-        .price-value { font-size: 28px; font-weight: bold; color: var(--salla-green); }
+        .price-value { font-size: 26px; font-weight: bold; color: var(--salla-green); }
 
-        .description { font-size: 15px; color: #555; border-top: 1px solid #eee; padding-top: 20px; margin-bottom: 30px; }
+        .description { font-size: 14px; color: #555; border-top: 1px solid #eee; padding-top: 20px; margin-bottom: 30px; line-height: 1.8; }
 
         /* Add to Cart Button */
         .btn-add-cart {
             background-color: var(--salla-green); color: #fff;
             width: 100%; padding: 15px; border: none; border-radius: 8px;
-            font-size: 18px; font-weight: bold; cursor: pointer;
-            display: flex; align-items: center; justify-content: center; gap: 10px;
+            font-size: 16px; font-weight: bold; cursor: pointer; transition: 0.3s;
         }
+        .btn-add-cart:hover { opacity: 0.9; }
 
-        /* Footer Payments Section - Match Image Exactly */
-        .payment-footer {
-            margin-top: 30px; text-align: center; border-top: 1px solid #eee; padding-top: 20px;
-        }
+        /* Payment Icons - Guaranteed Visibility */
+        .payment-footer { margin-top: 30px; text-align: center; border-top: 1px solid #eee; padding-top: 20px; }
         .payment-footer p { font-size: 12px; color: #999; margin-bottom: 15px; }
-        .payment-icons { display: flex; justify-content: center; align-items: center; gap: 15px; }
-        .payment-icons img { height: 18px; filter: grayscale(0.2); opacity: 0.9; }
+        .payment-icons { display: flex; justify-content: center; align-items: center; gap: 12px; flex-wrap: wrap; }
+        .payment-icons img { height: 20px; width: auto; }
 
-        /* Salla Original Footer */
+        /* Footer Salla Style */
         .main-footer { background: #fff; margin-top: 50px; padding: 60px 0 20px; border-top: 1px solid #eee; }
-        .footer-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px; }
-        .footer-col h4 { font-size: 16px; margin-bottom: 20px; position: relative; padding-right: 15px; }
-        .footer-col h4::after { content: ''; position: absolute; right: 0; top: 0; bottom: 0; width: 3px; background: var(--salla-green); }
+        .footer-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 40px; }
+        .footer-col h4 { font-size: 16px; margin-bottom: 20px; position: relative; padding-right: 15px; font-weight: bold; }
+        .footer-col h4::after { content: ''; position: absolute; right: 0; top: 3px; bottom: 3px; width: 3px; background: var(--salla-green); }
         .footer-col ul { list-style: none; padding: 0; margin: 0; }
-        .footer-col ul li { margin-bottom: 12px; font-size: 14px; color: #666; }
+        .footer-col ul li { margin-bottom: 12px; font-size: 14px; color: #666; display: flex; align-items: center; gap: 10px; }
         .footer-col ul li a { color: inherit; text-decoration: none; }
         
         .copyright { text-align: center; padding: 30px 0; border-top: 1px solid #f5f5f5; margin-top: 40px; font-size: 13px; color: #999; }
 
         @media (max-width: 768px) {
             .product-card { grid-template-columns: 1fr; }
-            .footer-grid { grid-template-columns: 1fr; text-align: center; }
-            .footer-col h4::after { right: 50%; transform: translateX(50%); display: none; }
+            .header-flex { flex-direction: column; gap: 15px; }
+            .search-container { flex: 0 0 100%; width: 100%; }
         }
     </style>
 </head>
@@ -97,12 +95,12 @@
 <header>
     <div class="container header-flex">
         <div class="logo">
-            <img src="https://raw.githubusercontent.com/kristall78/boop.github.io/main/p1629236570/%D8%A7%D9%84%D8%AA%D9%80%D9%80%D9%80%D9%85%D9%80%D9%80%D9%80%D9%8A%D9%81%D9%80%D9%80%B2%20(59).png" alt="Logo">
+            <img src="https://raw.githubusercontent.com/kristall78/boop.github.io/main/p1629236570/%D8%A7%D9%84%D8%AA%D9%80%D9%80%D9%80%D9%85%D9%80%D9%80%D9%8A%D9%81%D9%80%D9%80%B2%20(59).png" alt="متجر كرستال بلس">
         </div>
         <div class="search-container">
             <input type="text" placeholder="ابحث عن منتج...">
         </div>
-        <div style="font-size: 20px; color: #666;">🛒</div>
+        <div style="font-size: 20px; color: #666; cursor: pointer;">🛒</div>
     </div>
 </header>
 
@@ -113,13 +111,13 @@
 
     <main class="product-card">
         <div class="product-gallery">
-            <img src="https://cdn.salla.sa/vDBOo/085ae502-5bca-4364-adb1-5fe8147b2a7a-1000x903.13111545988-8nKTTAaDlF7gTEBpmGbKD4vQScFNJo2562wfn7WB.jpg" alt="Product Image">
+            <img src="https://cdn.salla.sa/vDBOo/085ae502-5bca-4364-adb1-5fe8147b2a7a-1000x903.13111545988-8nKTTAaDlF7gTEBpmGbKD4vQScFNJo2562wfn7WB.jpg" alt="حامل أقلام">
         </div>
 
         <div class="product-details">
             <div class="brand">Generic</div>
             <h1>حامل أقلام مكتبي شبكي معدني - أسود مطفي</h1>
-            <div class="tax-tag">شامل الضريبة</div>
+            <div class="tax-tag">السعر شامل الضريبة</div>
             
             <div class="availability">✓ متوفر في المخزون</div>
 
@@ -128,21 +126,19 @@
             </div>
 
             <div class="description">
-                منظم مكتبي بتصميم عصري من المعدن الشبكي المتين، يساعدك على ترتيب أقلامك وأدواتك المكتبيّة بشكل أنيق ومنظم. مثالي للمكاتب المنزلية والشركات.
+                منظم مكتبي بتصميم عصري من المعدن الشبكي المتين، يساعدك على ترتيب أقلامك وأدواتك المكتبيّة بشكل أنيق ومنظم. مصنوع من مواد عالية الجودة تدوم طويلاً.
             </div>
 
-            <button class="btn-add-cart">
-                <span>إضافة للسلة</span>
-            </button>
+            <button class="btn-add-cart">إضافة للسلة</button>
 
             <div class="payment-footer">
                 <p>طرق الدفع المتاحة</p>
                 <div class="payment-icons">
-                    <img src="https://salla.sa/assets/images/payment/mada.png" alt="mada">
-                    <img src="https://salla.sa/assets/images/payment/applepay.png" alt="apple pay">
-                    <img src="https://salla.sa/assets/images/payment/stcpay.png" alt="stc pay">
-                    <img src="https://salla.sa/assets/images/payment/visa.png" alt="visa">
-                    <img src="https://salla.sa/assets/images/payment/mastercard.png" alt="mastercard">
+                    <img src="https://checkout.salla.sa/assets/images/payment/mada.svg" alt="mada">
+                    <img src="https://checkout.salla.sa/assets/images/payment/applepay.svg" alt="applepay">
+                    <img src="https://checkout.salla.sa/assets/images/payment/stcpay.svg" alt="stcpay">
+                    <img src="https://checkout.salla.sa/assets/images/payment/visa.svg" alt="visa">
+                    <img src="https://checkout.salla.sa/assets/images/payment/mastercard.svg" alt="mastercard">
                 </div>
             </div>
         </div>
@@ -170,9 +166,9 @@
             <div class="footer-col">
                 <h4>تواصل معنا</h4>
                 <ul>
-                    <li>الرياض، المملكة العربية السعودية</li>
-                    <li>البريد: info@kristalpls.com</li>
-                    <li>سجل تجاري: 7052755050</li>
+                    <li>📍 الرياض، المملكة العربية السعودية</li>
+                    <li>✉️ info@kristalpls.com</li>
+                    <li>📞 +966559032548</li>
                 </ul>
             </div>
         </div>
