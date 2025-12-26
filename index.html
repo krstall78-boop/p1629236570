@@ -14,8 +14,8 @@
       "@context": "https://schema.org/",
       "@type": "Product",
       "name": "حامل أقلام مكتبي شبكي معدني - أسود",
-      "image": ["https://cdn.salla.sa/vDBOo/p1180395020-placeholder.jpg"],
-      "description": "منظم مكتبي دائري مصنوع من المعدن الشبكي عالي الجودة، مثالي لتنظيم الأقلام والأدوات المكتبية بشكل أنيق - متجر كرستال بلس",
+      "image": ["https://cdn.salla.sa/vDBOo/085ae502-5bca-4364-adb1-5fe8147b2a7a-1000x903.13111545988-8nKTTAaDlF7gTEBpmGbKD4vQScFNJo2562wfn7WB.jpg"],
+      "description": "حامل أقلام مكتبي شبكي معدني – منظم دائري للأدوات المكتبية هيكل عملي من المعدن الشبكي المتين مع طلاء أسود مطفي وقاعدة مستقرة.",
       "sku": "p1180395020", 
       "mpn": "p1180395020",
       "brand": {
@@ -44,9 +44,17 @@
         .product-image img { max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
         .product-details { flex: 1.2; min-width: 300px; }
         h1 { font-size: 26px; margin-top: 0; color: #333333; }
+        h2 { font-size: 18px; color: #2ecc71; margin-top: 20px; border-bottom: 1px solid #eee; padding-bottom: 5px; }
         .price { font-size: 28px; color: #2ecc71; font-weight: bold; margin: 15px 0; }
         .availability { color: #2ecc71; font-weight: bold; margin-bottom: 20px; display: flex; align-items: center; gap: 8px; }
-        .buy-button { display: inline-block; padding: 15px 35px; background: #2ecc71; color: #fff; text-decoration: none; border-radius: 8px; font-weight: bold; margin-top: 20px; transition: 0.3s; }
+        .add-to-cart-btn { display: inline-block; padding: 15px 35px; background: #2ecc71; color: #fff; text-decoration: none; border-radius: 8px; font-weight: bold; margin-top: 20px; transition: 0.3s; text-align: center; }
+        .add-to-cart-btn:hover { background: #27ae60; }
+        
+        .payment-methods { display: flex; gap: 10px; flex-wrap: wrap; margin: 15px 0; padding: 15px 0; border-top: 1px dashed #eee; border-bottom: 1px dashed #eee; }
+        .payment-methods img { height: 22px; opacity: 0.9; }
+
+        .specs-list { list-style: none; padding: 0; }
+        .specs-list li { margin-bottom: 8px; }
         .legal-footer { background: #ffffff; padding: 40px 20px; margin-top: 50px; border-top: 1px solid #eeeeee; color: #666666; font-size: 14px; }
         .footer-content { max-width: 900px; margin: auto; }
         .links { display: flex; flex-wrap: wrap; gap: 15px; margin: 20px 0; font-size: 13px; }
@@ -63,15 +71,41 @@
 <div class="container">
     <div class="product-flex">
         <div class="product-image">
-            <img src="https://cdn.salla.sa/vDBOo/p1180395020-placeholder.jpg" alt="حامل أقلام مكتبي شبكي معدني - أسود">
+            <img src="https://cdn.salla.sa/vDBOo/085ae502-5bca-4364-adb1-5fe8147b2a7a-1000x903.13111545988-8nKTTAaDlF7gTEBpmGbKD4vQScFNJo2562wfn7WB.jpg" alt="حامل أقلام مكتبي شبكي معدني - أسود">
         </div>
         <div class="product-details">
             <nav style="font-size: 12px; color: #999999; margin-bottom: 10px;">الرئيسية / أدوات مكتبية</nav>
             <h1>حامل أقلام مكتبي شبكي معدني - أسود</h1>
             <div class="availability">● متوفر في المخزون (1000 قطعة)</div>
-            <p style="color: #666666;">منظم مكتبي دائري مصنوع من المعدن الشبكي عالي الجودة، يتميز بهيكل متين مقاوم للصدأ، مثالي لتنظيم الأقلام والأدوات المكتبية بشكل أنيق وعصري على مكتبك.</p>
+            
+            <p style="color: #666666;">حامل أقلام مكتبي شبكي معدني – منظم دائري للأدوات المكتبية هيكل عملي من المعدن الشبكي المتين مع طلاء أسود مطفي وقاعدة مستقرة، مصمم لتنظيم أدوات المكتب بشكل أنيق ومرتب.</p>
+
+            <div class="payment-methods">
+                <img src="https://s.salla.network/assets/images/payment/mada.svg" alt="mada">
+                <img src="https://s.salla.network/assets/images/payment/visa.svg" alt="credit_card">
+                <img src="https://s.salla.network/assets/images/payment/bank.svg" alt="bank">
+                <img src="https://s.salla.network/assets/images/payment/stcpay.svg" alt="stc_pay">
+                <img src="https://s.salla.network/assets/images/payment/applepay.svg" alt="apple_pay">
+                <img src="https://s.salla.network/assets/images/payment/googlepay.svg" alt="google_pay">
+                <img src="https://s.salla.network/assets/images/payment/wallet.svg" alt="customer_wallet">
+            </div>
+
+            <h2>المواصفات</h2>
+            <ul class="specs-list" style="color: #666666;">
+                <li><strong>المادة:</strong> معدن شبكي مطلي</li>
+                <li><strong>الاستخدام:</strong> تنظيم الأقلام، المقصات، وأدوات المكتب الأساسية</li>
+                <li><strong>التصميم:</strong> حواف منحنية لسلامة الاستخدام، وهيكل شبكي يسمح برؤية الأدوات بوضوح</li>
+            </ul>
+
+            <h2>معلومات الشحن والاسترجاع</h2>
+            <ul class="specs-list" style="color: #666666;">
+                <li><strong>مدة الشحن:</strong> يتم تجهيز وشحن الطلب خلال 2 – 5 أيام عمل داخل المملكة العربية السعودية</li>
+                <li><strong>سياسة الاسترجاع:</strong> يمكن طلب الاستبدال أو الاسترجاع خلال 7 أيام من تاريخ الاستلام</li>
+                <li><strong>استرداد الأموال:</strong> يتم إعادة المبلغ إلى وسيلة الدفع المستخدمة خلال مدة تصل إلى 14 يوم عمل</li>
+            </ul>
+
             <div class="price">5.00 ر.س <span style="font-size: 14px; color: #999999; font-weight: normal;">(شامل الضريبة)</span></div>
-            <a href="https://kristalpls.com/jhgt/p1180395020" class="buy-button">إتمام الطلب من الموقع الرسمي</a>
+            <a href="https://kristalpls.com/cart" class="add-to-cart-btn">إضافة للسلة</a>
         </div>
     </div>
 </div>
