@@ -8,7 +8,33 @@
   <meta name="robots" content="index,follow,max-image-preview:large" />
 
   <title>حامل أقلام مكتبي شبكي معدني - متجر كرستال بلس</title>
-  <meta name="description" content="حامل أقلام مكتبي شبكي معدني – منظم دائري عملي للأدوات المكتبية. توصيل داخل السعودية. سياسة استرجاع 7 أيام." />
+  <meta name="description" content="حامل أقلام مكتبي شبكي معدني عالي الجودة – منظم دائري عملي للأدوات المكتبية باللون الأسود المطفي. شحن سريع لكافة مدن السعودية." />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org/",
+    "@type": "Product",
+    "name": "حامل أقلام مكتبي شبكي معدني - أسود مطفي",
+    "image": [
+      "https://cdn.salla.sa/vDBOo/085ae502-5bca-4364-adb1-5fe8147b2a7a-1000x903.13111545988-8nKTTAaDlF7gTEBpmGbKD4vQScFNJo2562wfn7WB.jpg"
+    ],
+    "description": "حامل أقلام مكتبي شبكي معدني – منظم دائري للأدوات المكتبية هيكل عملي من المعدن الشبكي المتين مع طلاء أسود مطفي وقاعدة مستقرة.",
+    "sku": "p1180395020",
+    "brand": {
+      "@type": "Brand",
+      "name": "متجر كرستال بلس"
+    },
+    "offers": {
+      "@type": "Offer",
+      "url": "https://kristalpls.com/jhgt/p1180395020",
+      "priceCurrency": "SAR",
+      "price": "5.00",
+      "availability": "https://schema.org/InStock",
+      "itemCondition": "https://schema.org/NewCondition",
+      "priceValidUntil": "2026-12-31"
+    }
+  }
+  </script>
 
   <style>
     :root{
@@ -30,7 +56,7 @@
       color:var(--text);
       line-height:1.75;
     }
-    a{color:inherit}
+    a{color:inherit; text-decoration:none;}
     .topbar{
       background:#fff;
       border-bottom:1px solid var(--line);
@@ -67,6 +93,9 @@
     header.site-header{
       background:#fff;
       border-bottom:1px solid var(--line);
+      position: sticky;
+      top: 0;
+      z-index: 100;
     }
     header.site-header .wrap{
       max-width:1100px;
@@ -81,7 +110,6 @@
       display:flex;
       align-items:center;
       gap:12px;
-      min-width:210px;
     }
     .brand img{
       width:46px;height:46px;
@@ -108,7 +136,7 @@
       width:min(640px,100%);
       border:1px solid var(--line);
       background:var(--soft);
-      padding:12px 14px;
+      padding:10px 14px;
       border-radius:999px;
       outline:none;
       font-size:14px;
@@ -117,21 +145,19 @@
       display:flex;
       align-items:center;
       gap:10px;
-      min-width:210px;
       justify-content:flex-end;
     }
     .iconbtn{
-      width:42px;height:42px;
+      width:40px;height:40px;
       display:inline-flex;
       align-items:center;
       justify-content:center;
       border:1px solid var(--line);
       background:#fff;
-      border-radius:12px;
+      border-radius:10px;
       cursor:pointer;
     }
 
-    /* Breadcrumb */
     .crumbs{
       max-width:1100px;
       margin:0 auto;
@@ -143,17 +169,15 @@
       align-items:center;
       flex-wrap:wrap;
     }
-    .crumbs a{color:var(--primary); text-decoration:none}
+    .crumbs a{color:var(--primary);}
     .crumbs .sep{opacity:.6}
 
-    /* Page container */
     .page{
       max-width:1100px;
       margin:0 auto;
       padding:18px 16px 40px;
     }
 
-    /* Product card - resembles Salla layout */
     .product-card{
       background:var(--card);
       border:1px solid var(--line);
@@ -163,8 +187,8 @@
     }
     .grid{
       display:grid;
-      grid-template-columns: 1.05fr 1fr;
-      gap:28px;
+      grid-template-columns: 1.1fr 1fr;
+      gap:30px;
       align-items:start;
     }
     @media (max-width: 900px){
@@ -179,37 +203,25 @@
       display:flex;
       align-items:center;
       justify-content:center;
-      padding:18px;
-      min-height:420px;
+      padding:10px;
     }
     .imgbox img{
       width:100%;
-      max-width:520px;
       height:auto;
       object-fit:contain;
+      border-radius: 8px;
     }
 
-    .title-row{
-      display:flex;
-      align-items:flex-start;
-      justify-content:space-between;
-      gap:12px;
-    }
     .p-title{
       margin:0;
-      font-size:22px;
+      font-size:24px;
       font-weight:800;
       line-height:1.45;
     }
     .p-brand{
       font-size:14px;
       color:var(--muted);
-      margin-top:6px;
-    }
-    .favshare{
-      display:flex;
-      gap:10px;
-      margin-top:2px;
+      margin: 8px 0;
     }
     .badge{
       display:inline-flex;
@@ -219,34 +231,41 @@
       color:#0f5132;
       background:#e9f7ee;
       border:1px solid #ccebd8;
-      padding:8px 12px;
+      padding:6px 14px;
       border-radius:999px;
-      margin:12px 0 10px;
-      width:fit-content;
+      margin:10px 0;
+    }
+    .price-box{
+      margin: 15px 0;
+      padding: 15px;
+      background: var(--soft);
+      border-radius: 12px;
     }
     .price{
-      font-size:22px;
+      font-size:28px;
       font-weight:900;
-      margin:8px 0 10px;
+      color: var(--primary);
     }
     .price small{
       font-weight:500;
       color:var(--muted);
-      font-size:12px;
+      font-size:13px;
       margin-right:6px;
     }
 
     .desc{
       color:var(--text);
-      font-size:14.5px;
-      margin:10px 0 18px;
+      font-size:15px;
+      margin:15px 0;
     }
 
     .section-title{
-      color:var(--primary);
+      color:var(--text);
       font-weight:800;
-      margin:18px 0 8px;
+      margin:15px 0 8px;
       font-size:15px;
+      border-right: 3px solid var(--primary);
+      padding-right: 10px;
     }
     .bullets{
       margin:0;
@@ -254,115 +273,67 @@
       color:#374151;
       font-size:14px;
     }
-    .bullets li{margin:6px 0}
+    .bullets li{margin:8px 0}
 
-    .info-box{
-      border:1px solid var(--line);
-      background:#fff;
-      border-radius:14px;
-      padding:14px 14px;
-      margin-top:14px;
-    }
-
-    /* Add to cart row like Salla */
     .buybox{
-      margin-top:18px;
+      margin-top:20px;
       border:1px solid var(--line);
       border-radius:14px;
-      padding:16px;
+      padding:20px;
       background:#fff;
-    }
-    .buyrow{
-      display:flex;
-      align-items:center;
-      justify-content:space-between;
-      gap:12px;
-      margin-bottom:12px;
-      color:var(--muted);
-      font-size:13px;
     }
     .cta-row{
       display:flex;
       align-items:center;
       gap:12px;
     }
-    .qty{
-      display:flex;
-      align-items:center;
-      border:1px solid var(--line);
-      border-radius:999px;
-      overflow:hidden;
-      height:46px;
-      background:#fff;
-      min-width:140px;
-    }
-    .qty button{
-      width:46px;
-      height:46px;
-      border:0;
-      background:#fff;
-      cursor:pointer;
-      font-size:18px;
-      color:#111827;
-    }
-    .qty input{
-      width:48px;
-      height:46px;
-      border:0;
-      outline:none;
-      text-align:center;
-      font-weight:800;
-      background:#fff;
-      color:#111827;
-    }
-    .btn{
+    /* تعديل زر الإضافة للسلة ليكون رابطاً مباشراً */
+    .btn-add{
       flex:1;
-      height:46px;
+      height:50px;
       border:0;
-      border-radius:999px;
+      border-radius:10px;
       background:var(--primary);
       color:#fff;
       font-weight:900;
-      font-size:15px;
-      cursor:pointer;
+      font-size:16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background 0.3s;
     }
-    .btn:hover{filter:brightness(.95)}
+    .btn-add:hover{background:#018a36}
+
     .paymethods{
       display:flex;
       gap:10px;
       flex-wrap:wrap;
-      margin-top:14px;
-      align-items:center;
-      opacity:.95;
+      margin-top:20px;
+      justify-content: center;
     }
-    .paymethods img{height:22px; width:auto; display:block;}
+    .paymethods img{height:20px; opacity:0.8;}
 
-    /* Footer - Salla-like */
     footer.footer{
-      margin-top:38px;
+      margin-top:40px;
       background:#fff;
       border-top:1px solid var(--line);
     }
     .footer .wrap{
       max-width:1100px;
       margin:0 auto;
-      padding:26px 16px 10px;
+      padding:30px 16px;
     }
     .footer-top{
       display:grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      gap:22px;
-      padding-bottom:18px;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap:30px;
+      padding-bottom:20px;
       border-bottom:1px solid var(--line);
-    }
-    @media (max-width: 900px){
-      .footer-top{grid-template-columns:1fr}
     }
     .ftitle{
       font-weight:900;
-      color:var(--primary);
-      margin-bottom:12px;
-      font-size:14px;
+      margin-bottom:15px;
+      font-size:15px;
     }
     .flist{
       list-style:none;
@@ -370,58 +341,13 @@
       padding:0;
       display:flex;
       flex-direction:column;
-      gap:10px;
-      color:#374151;
-      font-size:13.5px;
-    }
-    .flist a{
-      text-decoration:none;
-      color:#374151;
+      gap:12px;
+      font-size:14px;
     }
     .flist a:hover{color:var(--primary)}
-    .about{
-      color:#374151;
-      font-size:13.5px;
-      margin:0;
-      line-height:1.9;
-    }
-    .contact-item{
-      display:flex;
-      align-items:center;
-      gap:10px;
-      color:#374151;
-      font-size:13.5px;
-      text-decoration:none;
-    }
-    .contact-ico{
-      width:34px;height:34px;
-      border:1px solid var(--line);
-      border-radius:10px;
-      display:inline-flex;
-      align-items:center;
-      justify-content:center;
-      background:#fff;
-      color:var(--primary);
-      font-weight:900;
-    }
-
-    .footer-mid{
-      display:flex;
-      align-items:center;
-      justify-content:space-between;
-      gap:12px;
-      padding:14px 0 8px;
-      flex-wrap:wrap;
-    }
-    .footer-pay{
-      display:flex;
-      gap:10px;
-      flex-wrap:wrap;
-      align-items:center;
-    }
-    .footer-pay img{height:22px}
+    
     .copyright{
-      padding:10px 0 18px;
+      padding:20px 0;
       text-align:center;
       color:var(--muted);
       font-size:12px;
@@ -431,204 +357,122 @@
 
 <body>
 
-  <!-- Top small bar (like Salla top header) -->
   <div class="topbar">
     <div class="wrap">
       <div class="left">
-        <div class="chip"><span class="dot"></span> شحن داخل المملكة العربية السعودية</div>
-        <div class="chip">هاتف: <span class="ltr">+966559032548</span></div>
-        <div class="chip">البريد: <span class="ltr"><strong>info&#64;kristalpls&#46;com</strong></span></div>
+        <div class="chip"><span class="dot"></span> شحن سريع لكافة أنحاء المملكة</div>
+        <div class="chip ltr">+966559032548</div>
       </div>
-      <div class="chip">الدفع الآمن</div>
+      <div class="chip">دفع آمن 100%</div>
     </div>
   </div>
 
-  <!-- Header -->
   <header class="site-header">
     <div class="wrap">
-      <div class="brand">
-        <img src="https://cdn.salla.sa/vDBOo/085ae502-5bca-4364-adb1-5fe8147b2a7a-1000x903.13111545988-8nKTTAaDlF7gTEBpmGbKD4vQScFNJo2562wfn7WB.jpg" alt="Kristal Plus Logo">
+      <a href="https://kristalpls.com/" class="brand">
+        <img src="https://cdn.salla.sa/vDBOo/085ae502-5bca-4364-adb1-5fe8147b2a7a-1000x903.13111545988-8nKTTAaDlF7gTEBpmGbKD4vQScFNJo2562wfn7WB.jpg" alt="Logo">
         <div>
           <div class="name">kristalpls</div>
           <div class="sub">متجر كرستال بلس</div>
         </div>
-      </div>
+      </a>
 
       <div class="search">
-        <input type="search" placeholder="ادخل كلمة البحث" aria-label="Search">
+        <input type="search" placeholder="ابحث عن منتج...">
       </div>
 
       <div class="actions">
-        <button class="iconbtn" aria-label="Share">⤴</button>
-        <button class="iconbtn" aria-label="Favorite">♡</button>
-        <button class="iconbtn" aria-label="Cart">🛒</button>
+        <div class="iconbtn">🛒</div>
       </div>
     </div>
   </header>
 
-  <!-- Breadcrumbs -->
   <div class="crumbs">
     <a href="https://kristalpls.com/">الرئيسية</a>
     <span class="sep">/</span>
-    <a href="https://kristalpls.com/sww/c1039990292">أدوات مكتبية</a>
+    <span>أدوات مكتبية</span>
     <span class="sep">/</span>
-    <span>حامل أقلام مكتبي شبكي معدني أسود</span>
+    <span>حامل أقلام مكتبي</span>
   </div>
 
-  <!-- Page -->
   <main class="page">
-    <section class="product-card" aria-label="Product">
+    <div class="product-card">
       <div class="grid">
-
-        <!-- Image -->
         <div class="imgbox">
-          <img src="https://cdn.salla.sa/vDBOo/085ae502-5bca-4364-adb1-5fe8147b2a7a-1000x903.13111545988-8nKTTAaDlF7gTEBpmGbKD4vQScFNJo2562wfn7WB.jpg"
-               alt="حامل أقلام مكتبي شبكي معدني - أسود">
+          <img src="https://cdn.salla.sa/vDBOo/085ae502-5bca-4364-adb1-5fe8147b2a7a-1000x903.13111545988-8nKTTAaDlF7gTEBpmGbKD4vQScFNJo2562wfn7WB.jpg" alt="حامل أقلام مكتبي شبكي معدني">
         </div>
 
-        <!-- Details -->
         <div>
-          <div class="title-row">
-            <div>
-              <h1 class="p-title">حامل أقلام مكتبي شبكي معدني - أسود مطفي</h1>
-              <div class="p-brand">Generic</div>
-            </div>
-            <div class="favshare">
-              <button class="iconbtn" aria-label="Favorite">♡</button>
-              <button class="iconbtn" aria-label="Share">⤴</button>
-            </div>
-          </div>
-
+          <h1 class="p-title">حامل أقلام مكتبي شبكي معدني - أسود مطفي</h1>
+          <div class="p-brand">الماركة: كرستال بلس</div>
+          
           <div class="badge"><span class="dot"></span> متوفر في المخزون</div>
-          <div class="price">SAR 5 <small>شامل الضريبة</small></div>
+
+          <div class="price-box">
+             <div class="price">5.00 ر.س <small>شامل الضريبة</small></div>
+          </div>
 
           <p class="desc">
-            حامل أقلام مكتبي شبكي معدني – منظم دائري للأدوات المكتبية بهيكل عملي من المعدن الشبكي المتين مع طلاء أسود مطفي وقاعدة مستقرة،
-            مصمم لتنظيم أدوات المكتب بشكل أنيق ومرتب.
+            نظم مكتبك بلمسة عصرية مع حامل الأقلام الشبكي المتين. مصمم بهيكل معدني مقاوم للصدأ وقاعدة ثابتة تمنع الانزلاق، مثالي للمكاتب المدرسية والعملية.
           </p>
 
-          <div class="info-box">
-            <div class="section-title">المواصفات</div>
-            <ul class="bullets">
-              <li><strong>المادة:</strong> معدن شبكي مطلي</li>
-              <li><strong>الاستخدام:</strong> تنظيم الأقلام والمقصات وأدوات المكتب الأساسية</li>
-              <li><strong>التصميم:</strong> حواف منحنية لسلامة الاستخدام وهيكل شبكي يسمح برؤية الأدوات بوضوح</li>
-            </ul>
+          <div class="section-title">المواصفات الأساسية</div>
+          <ul class="bullets">
+            <li><strong>المادة:</strong> معدن شبكي معالج ضد الصدأ.</li>
+            <li><strong>اللون:</strong> أسود مطفي فاخر.</li>
+            <li><strong>التصميم:</strong> حواف آمنة وقاعدة دائرية مستقرة.</li>
+          </ul>
 
-            <div class="section-title">معلومات الشحن والاسترجاع</div>
-            <ul class="bullets">
-              <li><strong>مدة الشحن:</strong> 2 – 5 أيام عمل داخل المملكة العربية السعودية</li>
-              <li><strong>الاستبدال/الاسترجاع:</strong> خلال 7 أيام من تاريخ الاستلام وفق السياسات</li>
-              <li><strong>استرداد الأموال:</strong> خلال 7–14 يوم عمل حسب البنك</li>
-            </ul>
-          </div>
+          <div class="section-title">الشحن والضمان</div>
+          <ul class="bullets">
+            <li>توصيل خلال 2 - 5 أيام عمل لكافة مناطق المملكة.</li>
+            <li>سياسة استبدال واسترجاع مرنة خلال 7 أيام.</li>
+          </ul>
 
-          <!-- Buy box -->
           <div class="buybox">
-            <div class="buyrow">
-              <span>السعر</span>
-              <strong>SAR 5</strong>
-            </div>
-
             <div class="cta-row">
-              <button class="btn" type="button" onclick="alert('هذه صفحة عرض ثابتة للفحص. للشراء الفعلي استخدم صفحة سلة الأصلية.');">
+              <a href="https://kristalpls.com/cart" class="btn-add">
                 إضافة للسلة
-              </button>
-
-              <div class="qty" aria-label="Quantity">
-                <button type="button" onclick="var q=document.getElementById('qty'); q.value=Math.max(1, (+q.value||1)-1)">−</button>
-                <input id="qty" value="1" inputmode="numeric" aria-label="qty">
-                <button type="button" onclick="var q=document.getElementById('qty'); q.value=(+q.value||1)+1">+</button>
-              </div>
+              </a>
             </div>
 
-            <div class="paymethods" aria-label="Payment methods">
-              <img src="https://cdn.salla.network/images/payment/mada_mini.png?v=2.0.5" alt="mada">
-              <img src="https://cdn.salla.network/images/payment/credit_card_mini.png?v=2.0.5" alt="credit_card">
-              <img src="https://cdn.salla.network/images/payment/bank_mini.png?v=2.0.5" alt="bank">
-              <img src="https://cdn.salla.network/images/payment/stc_pay_mini.png?v=2.0.5" alt="stc_pay">
-              <img src="https://cdn.salla.network/images/payment/apple_pay_mini.png?v=2.0.5" alt="apple_pay">
-              <img src="https://cdn.salla.network/images/payment/google_pay_mini.png?v=2.0.5" alt="google_pay">
-              <img src="https://cdn.salla.network/images/payment/customer_wallet_mini.png?v=2.0.5" alt="wallet">
+            <div class="paymethods">
+              <img src="https://s.salla.network/assets/images/payment/mada.svg" alt="mada">
+              <img src="https://s.salla.network/assets/images/payment/visa.svg" alt="visa">
+              <img src="https://s.salla.network/assets/images/payment/stcpay.svg" alt="stcpay">
+              <img src="https://s.salla.network/assets/images/payment/applepay.svg" alt="applepay">
             </div>
           </div>
-
         </div>
       </div>
-    </section>
+    </div>
   </main>
 
-  <!-- Footer like Salla -->
   <footer class="footer">
     <div class="wrap">
       <div class="footer-top">
-
-        <!-- Important links -->
         <div>
-          <div class="ftitle">روابط مهمة</div>
+          <div class="ftitle">خدمة العملاء</div>
           <ul class="flist">
-            <li><a href="https://kristalpls.com/business-identity/page-143434545" target="_self">هوية النشاط التجاري</a></li>
-            <li><a href="https://kristalpls.com/terms-and-conditions/page-1737267115" target="_self">الشروط والأحكام</a></li>
-            <li><a href="https://kristalpls.com/shipping-policy/page-935855241" target="_self">سياسة الشحن والتوصيل</a></li>
-            <li><a href="https://kristalpls.com/refund-policy/page-1047709984" target="_self">سياسة الاستبدال والاسترجاع</a></li>
-            <li><a href="https://kristalpls.com/privacy-policy/page-1561588918" target="_self">سياسة الخصوصية</a></li>
-            <li><a href="https://kristalpls.com/contact/page-1077067452" target="_self">اتصل بنا</a></li>
-            <li><a href="https://kristalpls.com/about-us/page-304078269" target="_self">من نحن</a></li>
+            <li><a href="https://kristalpls.com/shipping-policy/page-935855241">سياسة الشحن</a></li>
+            <li><a href="https://kristalpls.com/refund-policy/page-1047709984">سياسة الاسترجاع</a></li>
+            <li><a href="https://kristalpls.com/privacy-policy/page-1561588918">سياسة الخصوصية</a></li>
           </ul>
         </div>
-
-        <!-- About -->
-        <div>
-          <div class="ftitle">من نحن</div>
-          <p class="about">
-            متجر كرستال بلس متجر إلكتروني سعودي متخصص في بيع الأدوات المكتبية داخل المملكة العربية السعودية.
-          </p>
-        </div>
-
-        <!-- Contact -->
         <div>
           <div class="ftitle">تواصل معنا</div>
           <ul class="flist">
-            <li>
-              <a class="contact-item" href="https://kristalpls.com/whatsapp/send" target="_blank" rel="noreferrer">
-                <span class="contact-ico">WA</span>
-                <span class="ltr">+966559032548</span>
-              </a>
-            </li>
-            <li>
-              <a class="contact-item" href="tel:+966559032548">
-                <span class="contact-ico">☎</span>
-                <span class="ltr">+966559032548</span>
-              </a>
-            </li>
-            <li>
-              <a class="contact-item" href="mailto:info@kristalpls.com">
-                <span class="contact-ico">✉</span>
-                <span class="ltr"><strong>info&#64;kristalpls&#46;com</strong></span>
-              </a>
-            </li>
+            <li>واتساب: +966559032548</li>
+            <li>ايميل: info@kristalpls.com</li>
           </ul>
         </div>
-
-      </div>
-
-      <div class="footer-mid">
-        <div class="footer-pay" aria-label="Payment methods in footer">
-          <img src="https://cdn.salla.network/images/payment/mada_mini.png?v=2.0.5" alt="mada">
-          <img src="https://cdn.salla.network/images/payment/credit_card_mini.png?v=2.0.5" alt="credit_card">
-          <img src="https://cdn.salla.network/images/payment/bank_mini.png?v=2.0.5" alt="bank">
-          <img src="https://cdn.salla.network/images/payment/stc_pay_mini.png?v=2.0.5" alt="stc_pay">
-          <img src="https://cdn.salla.network/images/payment/apple_pay_mini.png?v=2.0.5" alt="apple_pay">
-          <img src="https://cdn.salla.network/images/payment/google_pay_mini.png?v=2.0.5" alt="google_pay">
-        </div>
-
-        <div style="color:var(--muted); font-size:12px;">
-          شحن من الرياض إلى كافة أنحاء المملكة العربية السعودية
+        <div>
+          <div class="ftitle">عن المتجر</div>
+          <p style="font-size: 13px; color: var(--muted);">مؤسسة أريج عبدالله المالكي التجارية | سجل تجاري: 7052755050. متجر سعودي متخصص في توفير أفضل الأدوات المكتبية.</p>
         </div>
       </div>
-
       <div class="copyright">
-        الحقوق محفوظة | 2025 <a href="https://kristalpls.com" style="color:var(--primary); text-decoration:none;">متجر كرستال بلس</a>
+        جميع الحقوق محفوظة لمتجر كرستال بلس © 2025
       </div>
     </div>
   </footer>
