@@ -12,7 +12,6 @@
         .form-group { margin-bottom: 15px; text-align: right; }
         input { width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 6px; box-sizing: border-box; font-size: 14px; background: #fff; outline: none; }
         
-        /* تصميم الزر ليعمل كزر إرسال حقيقي */
         .btn-confirm { 
             display: block; 
             width: 100%; 
@@ -53,7 +52,9 @@
                 <input type="text" placeholder="العنوان" required>
             </div>
 
-            <button type="submit" class="btn-confirm">تأكيد الطلب والدفع</button>
+            <button type="submit" class="btn-confirm" onclick="alert('شكراً لثقتكم! سيتم التواصل معكم لتأكيد الطلب.')">
+                تأكيد الطلب والدفع
+            </button>
         </form>
 
         <div class="payment-icons">
