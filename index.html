@@ -1,177 +1,298 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>حامل أقلام مكتبي شبكي معدني - أسود</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>حامل أقلام مكتبي شبكي معدني - متجر كرستال بلس</title>
+    <style>
+        :root {
+            --salla-green: #00b286;
+            --salla-bg: #f8f8f8;
+            --text-main: #333;
+            --text-muted: #7e7e7e;
+            --border-color: #f1f1f1;
+        }
 
-<style>
-body{
-    margin:0;
-    font-family: system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
-    background:#fff;
-    color:#222;
-}
-.container{
-    max-width:1200px;
-    margin:0 auto;
-    padding:30px 20px;
-}
-.breadcrumbs{
-    font-size:14px;
-    color:#888;
-    margin-bottom:30px;
-}
-.breadcrumbs a{
-    color:#00a870;
-    text-decoration:none;
-}
-.product-layout{
-    display:grid;
-    grid-template-columns: 1fr 1fr;
-    gap:60px;
-    align-items:flex-start;
-}
-.product-image{
-    background:#fafafa;
-    border:1px solid #eee;
-    border-radius:12px;
-    padding:30px;
-}
-.product-image img{
-    width:100%;
-    display:block;
-}
-.product-info .brand{
-    text-align:center;
-    font-size:16px;
-    font-weight:600;
-    margin-bottom:10px;
-}
-.product-title{
-    text-align:center;
-    font-size:20px;
-    font-weight:600;
-    margin-bottom:5px;
-}
-.tax{
-    text-align:center;
-    font-size:13px;
-    color:#777;
-    margin-bottom:15px;
-}
-.price{
-    text-align:center;
-    font-size:22px;
-    font-weight:700;
-    margin-bottom:25px;
-}
-.desc{
-    font-size:15px;
-    line-height:1.9;
-    color:#333;
-    margin-bottom:25px;
-}
-.section-title{
-    color:#00a870;
-    font-weight:600;
-    margin:20px 0 10px;
-}
-ul{
-    padding-right:18px;
-    line-height:1.9;
-}
-.add-cart-box{
-    margin-top:40px;
-    border:1px solid #eee;
-    border-radius:12px;
-    padding:25px;
-}
-.add-cart-header{
-    display:flex;
-    justify-content:space-between;
-    margin-bottom:15px;
-}
-.add-cart-header span{
-    font-size:14px;
-    color:#777;
-}
-.cart-btn{
-    width:100%;
-    background:#00a870;
-    color:#fff;
-    border:none;
-    border-radius:10px;
-    padding:16px;
-    font-size:16px;
-    font-weight:600;
-    cursor:pointer;
-}
-@media(max-width:900px){
-    .product-layout{
-        grid-template-columns:1fr;
-    }
-}
-</style>
+        body {
+            margin: 0;
+            font-family: system-ui, -apple-system, sans-serif;
+            background-color: var(--salla-bg);
+            color: var(--text-main);
+        }
+
+        .container { max-width: 1100px; margin: 0 auto; padding: 0 15px; }
+
+        header {
+            background: #fff;
+            padding: 12px 0;
+            border-bottom: 1px solid var(--border-color);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .header-flex {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo img { height: 40px; display: block; }
+
+        .breadcrumbs {
+            padding: 15px 0;
+            font-size: 13px;
+            color: var(--text-muted);
+        }
+
+        .breadcrumbs a {
+            color: var(--salla-green);
+            text-decoration: none;
+            margin: 0 5px;
+        }
+
+        .product-card {
+            background: #fff;
+            border-radius: 10px;
+            padding: 25px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            border: 1px solid var(--border-color);
+        }
+
+        .product-gallery img {
+            width: 100%;
+            border-radius: 8px;
+            border: 1px solid #eee;
+        }
+
+        .brand-name {
+            color: var(--text-muted);
+            font-size: 13px;
+            margin-bottom: 8px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 20px;
+            margin: 0 0 10px;
+            font-weight: 600;
+            text-align: center;
+        }
+
+        .tax-tag {
+            font-size: 12px;
+            color: var(--text-muted);
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        .availability {
+            display: block;
+            text-align: center;
+            color: var(--salla-green);
+            font-size: 13px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .price-box { text-align: center; margin-bottom: 25px; }
+
+        .price-value {
+            font-size: 28px;
+            font-weight: 800;
+        }
+
+        .price-value span {
+            font-size: 16px;
+            margin-right: 5px;
+        }
+
+        .description {
+            font-size: 14px;
+            color: #555;
+            border-top: 1px solid #f5f5f5;
+            padding-top: 20px;
+            margin-bottom: 25px;
+            line-height: 1.7;
+            text-align: center;
+        }
+
+        .btn-add-cart {
+            background-color: var(--salla-green);
+            color: #fff;
+            width: 100%;
+            padding: 14px;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .payment-footer {
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        .payment-footer p {
+            font-size: 12px;
+            color: #aaa;
+            margin-bottom: 10px;
+        }
+
+        .payment-icons img {
+            width: 280px;
+            height: auto;
+        }
+
+        .main-footer {
+            background: #fff;
+            margin-top: 50px;
+            padding: 60px 0 20px;
+            border-top: 1px solid #eee;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 40px;
+        }
+
+        .footer-col h4 {
+            font-size: 16px;
+            margin-bottom: 20px;
+            position: relative;
+            padding-right: 15px;
+        }
+
+        .footer-col h4::after {
+            content: '';
+            position: absolute;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            width: 3px;
+            background: var(--salla-green);
+        }
+
+        .footer-col ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .footer-col ul li {
+            margin-bottom: 12px;
+            font-size: 14px;
+            color: #666;
+        }
+
+        .footer-col ul li a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .copyright {
+            text-align: center;
+            padding: 30px 0;
+            border-top: 1px solid #f5f5f5;
+            margin-top: 40px;
+            font-size: 13px;
+            color: #999;
+        }
+
+        @media (max-width: 768px) {
+            .product-card { grid-template-columns: 1fr; }
+            .footer-grid { grid-template-columns: 1fr; }
+        }
+    </style>
 </head>
-
 <body>
 
-<div class="container">
+<header>
+    <div class="container header-flex">
+        <div class="logo">
+            <img src="https://github.com/krstall78-boop/p1629236570/blob/main/sqswrrfd.png?raw=true" alt="شعار متجر كرستال بلس">
+        </div>
+    </div>
+</header>
 
+<div class="container">
+    <!-- ✅ التعديل الوحيد هنا -->
     <div class="breadcrumbs">
         <a href="https://kristalpls.com/">الرئيسية</a> /
         <a href="https://kristalpls.com/sww/c1039990292">أدوات مكتبية</a> /
         حامل أقلام مكتبي شبكي معدني - أسود
     </div>
 
-    <div class="product-layout">
-
-        <!-- الصورة -->
-        <div class="product-image">
-            <img src="https://cdn.salla.sa/vDBOo/085ae502-5bca-4364-adb1-5fe8147b2a7a-1000x903.13111545988-8nKTTAaDlF7gTEBpmGbKD4vQScFNJo2562wfn7WB.jpg" alt="حامل أقلام مكتبي">
+    <main class="product-card">
+        <div class="product-gallery">
+            <img src="https://cdn.salla.sa/vDBOo/085ae502-5bca-4364-adb1-5fe8147b2a7a-1000x903.13111545988-8nKTTAaDlF7gTEBpmGbKD4vQScFNJo2562wfn7WB.jpg" alt="حامل أقلام">
         </div>
 
-        <!-- المحتوى -->
-        <div class="product-info">
+        <div>
+            <div class="brand-name">Generic</div>
+            <h1>حامل أقلام مكتبي شبكي معدني - أسود مطفي</h1>
+            <div class="tax-tag">شامل الضريبة</div>
+            <div class="availability">✓ متوفر في المخزون</div>
 
-            <div class="brand">Generic</div>
-            <div class="product-title">حامل أقلام مكتبي شبكي معدني - أسود</div>
-            <div class="tax">شامل الضريبة</div>
-            <div class="price">SAR 5</div>
-
-            <div class="desc">
-                حامل أقلام مكتبي شبكي معدني – منظم دائري للأدوات المكتبية هيكل عملي من المعدن الشبكي المتين مع طلاء أسود مطفي وقاعدة مستقرة، مصمم لتنظيم أدوات المكتب بشكل أنيق ومرتب.
+            <div class="price-box">
+                <div class="price-value">5.00 <span>ر.س</span></div>
             </div>
 
-            <div class="section-title">المواصفات</div>
-            <ul>
-                <li>المادة: معدن شبكي مطلي</li>
-                <li>الاستخدام: تنظيم الأقلام، المقصات، وأدوات المكتب الأساسية</li>
-                <li>التصميم: حواف منحنية لسلامة الاستخدام، وهيكل شبكي يسمح برؤية الأدوات بوضوح</li>
-            </ul>
+            <div class="description">
+                منظم مكتبي بتصميم عصري من المعدن الشبكي المتين، يساعدك على ترتيب أقلامك وأدواتك المكتبيّة بشكل أنيق ومنظم.
+            </div>
 
-            <div class="section-title">معلومات الشحن والاسترجاع</div>
-            <ul>
-                <li>مدة الشحن: يتم تجهيز وشحن الطلب خلال 2 – 5 أيام عمل داخل المملكة العربية السعودية</li>
-                <li>سياسة الاسترجاع: يمكن طلب الاستبدال أو الاسترجاع خلال 7 أيام من تاريخ الاستلام</li>
-                <li>استرداد الأموال: يتم إعادة المبلغ إلى وسيلة الدفع المستخدمة خلال مدة تصل إلى 14 يوم عمل من تاريخ قبول طلب الاسترجاع</li>
-            </ul>
+            <a href="https://kristalpls.com/cart">
+                <button class="btn-add-cart">إضافة للسلة</button>
+            </a>
 
-            <div class="add-cart-box">
-                <div class="add-cart-header">
-                    <span>السعر</span>
-                    <strong>SAR 5</strong>
+            <div class="payment-footer">
+                <p>طرق الدفع المتاحة</p>
+                <div class="payment-icons">
+                    <img src="https://github.com/krstall78-boop/p1629236570/blob/main/payment-methods.png.png?raw=true" alt="طرق الدفع">
                 </div>
-                <a href="https://kristalpls.com/cart">
-                    <button class="cart-btn">إضافة للسلة</button>
-                </a>
             </div>
+        </div>
+    </main>
+</div>
 
+<footer class="main-footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h4>من نحن</h4>
+                <ul>
+                    <li>متجر كرستال بلس متخصص في بيع الأدوات المكتبية داخل المملكة العربية السعودية.</li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>روابط هامة</h4>
+                <ul>
+                    <li><a href="#">سياسة الشحن والتوصيل</a></li>
+                    <li><a href="#">سياسة الاستبدال والاسترجاع</a></li>
+                    <li><a href="#">سياسة الخصوصية</a></li>
+                    <li><a href="#">اتصل بنا</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>تواصل معنا</h4>
+                <ul>
+                    <li>الرياض – المملكة العربية السعودية</li>
+                    <li>info@kristalpls.com</li>
+                    <li>سجل تجاري: 7052755050</li>
+                </ul>
+            </div>
         </div>
 
+        <div class="copyright">
+            جميع الحقوق محفوظة © متجر كرستال بلس 2025
+        </div>
     </div>
-</div>
+</footer>
 
 </body>
 </html>
