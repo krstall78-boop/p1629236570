@@ -224,8 +224,8 @@
 
 <div class="container">
     <div class="breadcrumbs">
-        <a href="https://kristalpls.com/">الرئيسية</a> / 
-        <a href="https://kristalpls.com/sww/c1039990292">أدوات مكتبية</a> / 
+        <a href="#">الرئيسية</a> / 
+        <a href="#">أدوات مكتبية</a> / 
         حامل أقلام مكتبي شبكي معدني - أسود
     </div>
 
@@ -273,13 +273,12 @@
             <div class="footer-col">
                 <h4>روابط هامة</h4>
                 <ul>
-                    <li><a href="https://kristalpls.com/business-identity/page-143434545">هوية النشاط التجاري</a></li>
-                    <li><a href="https://kristalpls.com/terms-and-conditions/page-1737267115">الشروط والأحكام</a></li>
-                    <li><a href="https://kristalpls.com/shipping-policy/page-935855241">سياسة الشحن والتوصيل</a></li>
-                    <li><a href="https://kristalpls.com/refund-policy/page-1047709984">سياسة الاستبدال والاسترجاع</a></li>
-                    <li><a href="https://kristalpls.com/privacy-policy/page-1561588918">سياسة الخصوصية</a></li>
-                    <li><a href="https://kristalpls.com/contact/page-1077067452">اتصل بنا</a></li>
-                    <li><a href="https://kristalpls.com/about/page-304078269">من نحن</a></li>
+                    <li><a href="#">هوية النشاط التجاري</a></li>
+                    <li><a href="#">الشروط والأحكام</a></li>
+                    <li><a href="#">سياسة الشحن والتوصيل</a></li>
+                    <li><a href="#">سياسة الاستبدال والاسترجاع</a></li>
+                    <li><a href="#">سياسة الخصوصية</a></li>
+                    <li><a href="#">اتصل بنا</a></li>
                 </ul>
             </div>
 
@@ -300,9 +299,7 @@
 </footer>
 
 <script>
-    // برمجة إضافة المنتج للسلة فعلياً في المتصفح
     document.getElementById('addToCartBtn').addEventListener('click', function() {
-        // بيانات المنتج
         const product = {
             id: 'p1629236570',
             name: 'حامل أقلام مكتبي شبكي معدني - أسود مطفي',
@@ -311,16 +308,14 @@
             image: 'https://cdn.salla.sa/vDBOo/085ae502-5bca-4364-adb1-5fe8147b2a7a-1000x903.13111545988-8nKTTAaDlF7gTEBpmGbKD4vQScFNJo2562wfn7WB.jpg'
         };
 
-        // تخزين المنتج في LocalStorage لمحاكاة السلة الحقيقية
         localStorage.setItem('salla_cart_item', JSON.stringify(product));
         
-        // إظهار حالة الإضافة
         this.innerText = "جاري الإضافة...";
         this.style.background = "#008a68";
 
-        // التحويل لصفحة السلة بعد 700 ملي ثانية
+        // التحويل لصفحة السلة المحلية في GitHub
         setTimeout(function() {
-            window.location.href = "https://kristalpls.com/cart";
+            window.location.href = "cart.html";
         }, 700);
     });
 </script>
