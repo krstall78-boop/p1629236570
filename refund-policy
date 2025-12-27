@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="robots" content="index,follow" />
+  <title>سياسة الاستبدال والاسترجاع | متجر كرستال بلس</title>
+  
+  <style>
+    .return-container {
+      --primary: #01a23f;
+      --bg-dark: #0f172a;
+      --card-dark: #1e293b;
+      --text-main: #ffffff;
+      --text-muted: #94a3b8;
+      --border-line: rgba(255,255,255,0.1);
+      max-width: 850px;
+      margin: 40px auto;
+      padding: 30px 25px;
+      background: var(--bg-dark);
+      color: var(--text-main);
+      font-family: 'Segoe UI', Tahoma, sans-serif;
+      border-radius: 16px;
+      line-height: 1.8;
+      border: 1px solid var(--border-line);
+    }
+    .return-header { text-align: center; border-bottom: 2px solid var(--primary); padding-bottom: 20px; margin-bottom: 30px; }
+    .return-header h1 { font-size: 28px; margin: 0; color: var(--text-main); }
+    .return-section { background: var(--card-dark); padding: 20px; border-radius: 12px; margin-bottom: 20px; border: 1px solid var(--border-line); }
+    .return-section h2 { font-size: 19px; color: var(--primary); margin: 0 0 15px 0; display: flex; justify-content: space-between; align-items: center; }
+    .en-label { font-size: 11px; color: var(--text-muted); text-transform: uppercase; }
+    .return-section p, .return-section li { color: var(--text-main); font-size: 15.5px; }
+    .highlight { color: var(--primary); font-weight: bold; }
+    .contact-box { background: rgba(1, 162, 63, 0.05); border-right: 4px solid var(--primary); padding: 20px; margin-top: 30px; border-radius: 4px; }
+  </style>
+</head>
+<body>
+  <div class="return-container">
+    <header class="return-header">
+      <h1>سياسة الاستبدال والاسترجاع</h1>
+      <p style="color: var(--text-muted); font-size: 14px;">Returns & Refund Policy - Kristal Plus Store</p>
+    </header>
+
+    <section class="return-section">
+      <h2>فترة الاسترجاع <span class="en-label">Return Window</span></h2>
+      <p>يحق لعملائنا طلب الاستبدال أو الاسترجاع خلال <strong class="highlight">7 أيام</strong> من تاريخ استلام المنتج، وفقاً لأنظمة التجارة الإلكترونية في المملكة العربية السعودية.</p>
+    </section>
+
+    <section class="return-section">
+      <h2>شروط قبول الطلب <span class="en-label">Return Conditions</span></h2>
+      <ul>
+        <li>أن يكون المنتج في <strong class="highlight">حالته الأصلية</strong> وبتغليفه الأصلي دون فتح.</li>
+        <li>إرفاق فاتورة الشراء أو رقم الطلب لضمان سرعة المعالجة.</li>
+        <li>بعض المنتجات الاستهلاكية أو العروض الخاصة قد لا تكون قابلة للاسترجاع ما لم يذكر خلاف ذلك في صفحة المنتج.</li>
+      </ul>
+    </section>
+
+    <section class="return-section">
+      <h2>تكاليف الشحن والرسوم <span class="en-label">Shipping & Fees</span></h2>
+      <ul>
+        <li><strong>خطأ من المتجر أو عيب مصنعي:</strong> <span class="highlight">يتحمل المتجر كافة تكاليف الشحن والإرجاع</span>.</li>
+        <li><strong>رغبة العميل (تغيير رأي):</strong> يتحمل العميل تكاليف شحن الإرجاع، ويتم خصم القيمة من المبلغ المسترد وفقاً لتسعيرة شركة الشحن المتعاقد معها.</li>
+      </ul>
+    </section>
+
+    <section class="return-section">
+      <h2>آلية الاسترداد المالي <span class="en-label">Refund Process</span></h2>
+      <p>يتم إعادة المبالغ إلى <strong class="highlight">نفس وسيلة الدفع الأصلية</strong> خلال مدة لا تتجاوز <strong class="highlight">14 يوم عمل</strong> بعد وصول المنتج لمستودعاتنا وفحصه، مع مراعاة خصم رسوم الشحن إن وجدت.</p>
+    </section>
+
+    <div class="contact-box">
+      <strong>لبدء طلب الاسترجاع :</strong><br>
+      البريد الإلكتروني: <span dir="ltr"><strong>info&#64;kristalpls&#46;com</strong></span><br>
+      الدعم الفني (واتساب): +966559032548
+    </div>
+
+    <p style="font-size:13px; color:var(--text-muted); text-align:center; margin-top:30px;">
+      هذه السياسة جزء من التزامنا بمعايير حماية المستهلك والشفافية المالية.
+    </p>
+
+    <footer style="text-align: center; margin-top: 10px; font-size: 11px; color: var(--text-muted);">
+      © 2025 متجر كرستال بلس | سجل تجاري: 7052755050
+    </footer>
+  </div>
+</body>
+</html>
