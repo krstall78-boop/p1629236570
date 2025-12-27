@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="robots" content="index,follow" />
+  <title>سياسة الخصوصية | متجر كرستال بلس</title>
+  
+  <style>
+    /* تنسيق معزول لضمان الوضوح والاحترافية للفحص البشري */
+    .privacy-container {
+      --primary: #01a23f;
+      --bg-dark: #0f172a;
+      --card-dark: #1e293b;
+      --text-main: #ffffff;
+      --text-muted: #94a3b8;
+      --border-line: rgba(255,255,255,0.1);
+
+      max-width: 850px;
+      margin: 40px auto;
+      padding: 30px 25px;
+      background: var(--bg-dark);
+      color: var(--text-main);
+      font-family: 'Segoe UI', Tahoma, sans-serif;
+      border-radius: 16px;
+      line-height: 1.8;
+      border: 1px solid var(--border-line);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    }
+
+    .privacy-header {
+      text-align: center;
+      border-bottom: 2px solid var(--primary);
+      padding-bottom: 20px;
+      margin-bottom: 30px;
+    }
+
+    .privacy-header h1 { font-size: 28px; margin: 0; color: var(--text-main); }
+
+    .privacy-section {
+      background: var(--card-dark);
+      padding: 20px;
+      border-radius: 12px;
+      margin-bottom: 20px;
+      border: 1px solid var(--border-line);
+    }
+
+    .privacy-section h2 {
+      font-size: 19px;
+      color: var(--primary);
+      margin: 0 0 15px 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .en-label { font-size: 11px; color: var(--text-muted); text-transform: uppercase; letter-spacing: 1px; }
+
+    .privacy-section p, .privacy-section li { color: var(--text-main); font-size: 15.5px; }
+
+    .highlight { color: var(--primary); font-weight: bold; }
+
+    .contact-box {
+      background: rgba(1, 162, 63, 0.05);
+      border-right: 4px solid var(--primary);
+      padding: 20px;
+      margin-top: 30px;
+      border-radius: 4px;
+    }
+
+    strong { color: #ffffff; }
+  </style>
+</head>
+<body>
+  <div class="privacy-container">
+    <header class="privacy-header">
+      <h1>سياسة الخصوصية</h1>
+      <p style="color: var(--text-muted); font-size: 14px;">Privacy Policy - Kristal Plus Store</p>
+    </header>
+
+    <section class="privacy-section">
+      <h2>جمع البيانات <span class="en-label">Data Collection</span></h2>
+      <p>في <strong>متجر كرستال بلس</strong>، نجمع البيانات الضرورية فقط لإتمام طلباتك وتحسين تجربتك، وتشمل: الاسم، رقم الجوال، البريد الإلكتروني، وعنوان الشحن. <span class="highlight">نحن لا نقوم بتخزين بيانات بطاقات الدفع الائتمانية إطلاقاً</span>، حيث يتم معالجتها عبر بوابات دفع مشفرة وآمنة.</p>
+    </section>
+
+    <section class="privacy-section">
+      <h2>استخدام البيانات <span class="en-label">How We Use Data</span></h2>
+      <ul>
+        <li>معالجة طلبات الشراء وتوصيلها عبر شركائنا اللوجستيين.</li>
+        <li>تقديم الدعم الفني والرد على استفساراتكم.</li>
+        <li>تحسين أداء المتجر وضمان أمان العمليات البرمجية.</li>
+        <li>الامتثال للقوانين والأنظمة المعمول بها في المملكة العربية السعودية.</li>
+      </ul>
+    </section>
+
+    <section class="privacy-section">
+      <h2>أمن البيانات <span class="en-label">Data Security</span></h2>
+      <p>نستخدم بروتوكولات حماية متطورة (SSL/HTTPS) لتشفير كافة البيانات المتبادلة. لا نقوم ببيع أو تأجير بياناتكم لأي أطراف ثالثة، ويتم مشاركة البيانات الضرورية فقط مع شركات الشحن لإيصال المنتج إليكم.</p>
+    </section>
+
+    <section class="privacy-section">
+      <h2>حقوق العميل <span class="en-label">Your Rights</span></h2>
+      <p>بموجب نظام حماية البيانات، يحق لك الاطلاع على بياناتك، تعديلها، أو طلب حذفها في أي وقت. كما يمكنك سحب موافقتك على تلقي العروض التسويقية عبر إعدادات حسابك أو التواصل معنا مباشرة.</p>
+    </section>
+
+    <div class="contact-box">
+      <strong>لأي استفسارات تتعلق بخصوصية بياناتكم:</strong><br>
+      البريد الإلكتروني : <span dir="ltr"><strong>info&#64;kristalpls&#46;com</strong></span><br>
+      الدعم الفني (واتساب): +966559032548
+    </div>
+
+    <p style="font-size:13px; color:var(--text-muted); text-align:center; margin-top:30px;">
+      تم تحديث هذه السياسة لتتوافق مع نظام حماية البيانات الشخصية في المملكة العربية السعودية.
+    </p>
+
+    <footer style="text-align: center; margin-top: 10px; font-size: 11px; color: var(--text-muted);">
+      © 2025 متجر كرستال بلس | آخر تحديث: ديسمبر 2025
+    </footer>
+  </div>
+</body>
+</html>
