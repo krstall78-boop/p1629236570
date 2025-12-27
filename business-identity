@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="robots" content="index,follow" />
+  <title>هوية النشاط التجاري | متجر كرستال بلس</title>
+  <meta name="description" content="هوية النشاط التجاري والبيانات الرسمية لمتجر كرستال بلس داخل المملكة العربية السعودية." />
+
+  <!--  CSS محصور داخل حاوية الصفحة فقط (بدون لمس الثيم) -->
+  <style>
+    .bi-wrap{
+      --bi-primary:#01a23f;
+      --bi-accent:#27c865;
+      --bi-bg:#0f172a;
+      --bi-card:#1e293b;
+      --bi-text:#ffffff;
+      --bi-dim:#94a3b8;
+      --bi-border:rgba(255,255,255,.10);
+
+      max-width: 760px;
+      margin: 40px auto;
+      padding: 28px 18px;
+      border-radius: 18px;
+      background: var(--bi-bg);
+      color: var(--bi-text);
+      font-family: Tahoma, "Segoe UI", Arial, sans-serif;
+      line-height: 1.7;
+    }
+    .bi-head{
+      text-align:center;
+      padding-bottom: 18px;
+      margin-bottom: 18px;
+      border-bottom: 1px solid var(--bi-border);
+    }
+    .bi-title{
+      margin: 0;
+      font-size: 26px;
+      color: var(--bi-primary);
+      font-weight: 800;
+    }
+    .bi-badge{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      margin-top: 10px;
+      padding: 6px 12px;
+      border-radius: 999px;
+      border: 1px solid var(--bi-primary);
+      background: rgba(1,162,63,.14);
+      color: var(--bi-accent);
+      font-size: 12.5px;
+      font-weight: 700;
+      white-space: nowrap;
+    }
+    .bi-grid{
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+    }
+    @media (max-width: 640px){
+      .bi-grid{ grid-template-columns: 1fr; }
+    }
+    .bi-card{
+      background: var(--bi-card);
+      border: 1px solid var(--bi-border);
+      border-radius: 14px;
+      padding: 16px 16px;
+    }
+    .bi-card h2{
+      margin: 0 0 10px 0;
+      font-size: 15px;
+      color: var(--bi-accent);
+      font-weight: 800;
+      border-right: 3px solid var(--bi-primary);
+      padding-right: 10px;
+    }
+    .bi-row{
+      margin: 10px 0;
+    }
+    .bi-label{
+      display:block;
+      font-size: 12px;
+      color: var(--bi-dim);
+      margin-bottom: 2px;
+    }
+    .bi-value{
+      display:block;
+      font-size: 14.5px;
+      font-weight: 700;
+      color: var(--bi-text);
+      word-break: break-word;
+    }
+    .bi-wide{ grid-column: 1 / -1; }
+    .bi-foot{
+      margin-top: 16px;
+      border-top: 1px solid var(--bi-border);
+      padding-top: 14px;
+      text-align:center;
+      font-size: 12.5px;
+      color: var(--bi-dim);
+    }
+  </style>
+
+  <!--  Organization Schema صحيح (هوية المتجر وليس اسم منتج) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "متجر كرستال بلس",
+    "legalName": "مؤسسة أريج عبدالله المالكي التجارية",
+    "url": "https://kristalpls.com",
+    "email": "info@kristalpls.com",
+    "telephone": "+966559032548",
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "SA",
+      "addressLocality": "الرياض",
+      "streetAddress": "حي الدار البيضاء – شارع الجدين",
+      "postalCode": "14518"
+    }
+  }
+  </script>
+</head>
+
+<body>
+  <!--  هذا الجزء فقط يظهر داخل صفحة سلة، بدون لمس الهيدر/الفوتر -->
+  <section class="bi-wrap" aria-label="هوية النشاط التجاري">
+    <header class="bi-head">
+      <h1 class="bi-title">هوية النشاط التجاري</h1>
+      <div class="bi-badge">Verified E-Commerce Entity</div>
+    </header>
+
+    <div class="bi-grid">
+      <article class="bi-card">
+        <h2>الكيان القانوني</h2>
+        <div class="bi-row">
+          <span class="bi-label">Legal Entity Name</span>
+          <span class="bi-value">مؤسسة أريج عبدالله المالكي التجارية</span>
+        </div>
+        <div class="bi-row">
+          <span class="bi-label">Commercial Registration (CR)</span>
+          <span class="bi-value">7052755050</span>
+        </div>
+      </article>
+
+      <article class="bi-card">
+        <h2>التوثيق الحكومي</h2>
+        <div class="bi-row">
+          <span class="bi-label">Business Center Verification</span>
+          <span class="bi-value">المركز السعودي للأعمال</span>
+        </div>
+        <div class="bi-row">
+          <span class="bi-label">Certificate Number</span>
+          <span class="bi-value">0000205221</span>
+        </div>
+      </article>
+
+      <article class="bi-card bi-wide">
+        <h2>بيانات التواصل الرسمي</h2>
+        <div class="bi-row">
+          <span class="bi-label">Official Email</span>
+          <span class="bi-value">
+            <strong>info&#64;kristalpls&#46;com</strong>
+          </span>
+        </div>
+        <div class="bi-row">
+          <span class="bi-label">Phone / WhatsApp</span>
+          <span class="bi-value">+966559032548</span>
+        </div>
+        <div class="bi-row">
+          <span class="bi-label">Store Domain</span>
+          <span class="bi-value">kristalpls.com</span>
+        </div>
+      </article>
+
+      <article class="bi-card bi-wide">
+        <h2>المقر الرسمي والعنوان</h2>
+        <div class="bi-row">
+          <span class="bi-label">Physical Address</span>
+          <span class="bi-value">المملكة العربية السعودية، الرياض، حي الدار البيضاء – شارع الجدين، 14518</span>
+        </div>
+        <div class="bi-row">
+          <span class="bi-label">Shipping Origin</span>
+          <span class="bi-value">جميع الطلبات تُجهّز وتُشحن من مستودعاتنا داخل الرياض</span>
+        </div>
+      </article>
+    </div>
+
+    <div class="bi-foot">
+      بيانات رسمية معتمدة لمتجر <strong style="color:#fff;">كرستال بلس</strong>.
+    </div>
+  </section>
+</body>
+</html>
