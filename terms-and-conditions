@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="robots" content="index,follow" />
+  <title>الشروط والأحكام | متجر كرستال بلس</title>
+  <style>
+    .terms-container {
+      --primary: #01a23f;
+      --bg-dark: #0f172a;
+      --card-dark: #1e293b;
+      --text-main: #ffffff;
+      --text-muted: #94a3b8;
+      --border-line: rgba(255,255,255,0.1);
+      max-width: 850px;
+      margin: 40px auto;
+      padding: 30px 25px;
+      background: var(--bg-dark);
+      color: var(--text-main);
+      font-family: 'Segoe UI', Tahoma, sans-serif;
+      border-radius: 16px;
+      line-height: 1.8;
+      border: 1px solid var(--border-line);
+    }
+    .terms-header { text-align: center; border-bottom: 2px solid var(--primary); padding-bottom: 20px; margin-bottom: 30px; }
+    .terms-section { background: var(--card-dark); padding: 20px; border-radius: 12px; margin-bottom: 20px; border: 1px solid var(--border-line); }
+    .terms-section h2 { font-size: 19px; color: var(--primary); margin: 0 0 15px 0; display: flex; justify-content: space-between; }
+    .en-sub { font-size: 12px; color: var(--text-muted); font-weight: normal; }
+    .highlight { color: var(--primary); font-weight: bold; }
+    .contact-box { background: rgba(1, 162, 63, 0.05); border-right: 4px solid var(--primary); padding: 20px; margin-top: 30px; border-radius: 4px; }
+  </style>
+</head>
+<body>
+  <div class="terms-container">
+    <header class="terms-header">
+      <h1>الشروط والأحكام</h1>
+      <p style="color: var(--text-muted); font-size: 14px;">Terms and Conditions - Kristal Plus Store</p>
+    </header>
+
+    <section class="terms-section">
+      <h2>الكيان القانوني <span class="en-sub">Legal Identity</span></h2>
+      <p>يتم تشغيل المتجر بواسطة <strong>مؤسسة أريج عبدالله المالكي التجارية</strong>، سجل تجاري: <strong>7052755050</strong>.</p>
+    </section>
+
+    <section class="terms-section">
+      <h2>الشحن والتوصيل <span class="en-sub">Shipping Policy</span></h2>
+      <p>يتم شحن جميع الطلبات من مستودعاتنا في الرياض. <span class="highlight">هذا المتجر يخدم العملاء داخل المملكة العربية السعودية فقط، ولا يقدم شحنًا دوليًا.</span></p>
+      <p>مدة التوصيل المتوقعة تتراوح بين 2 إلى 5 أيام عمل.</p>
+    </section>
+
+    <section class="terms-section">
+      <h2>الاستبدال والاسترجاع <span class="en-sub">Refund & Returns</span></h2>
+      <p>يحق للعميل طلب الاسترجاع خلال <strong class="highlight">7 أيام</strong> من تاريخ الاستلام، بشرط أن يكون المنتج بحالته الأصلية. يتم استرداد المبالغ عبر وسيلة الدفع الأصلية خلال 14 يوم عمل.</p>
+    </section>
+
+    <div class="contact-box">
+      <strong>للتواصل :</strong><br>
+      البريد الإلكتروني: <span dir="ltr"><strong>info&#64;kristalpls&#46;com</strong></span><br>
+      هاتف الدعم: +966559032548
+    </div>
+
+    <p style="font-size:13px; color:var(--text-muted); text-align:center; margin-top:30px;">
+      هذه الشروط خاضعة لأنظمة التجارة الإلكترونية المعمول بها في المملكة العربية السعودية.
+    </p>
+
+    <footer style="text-align: center; margin-top: 10px; font-size: 12px; color: var(--text-muted);">
+      © 2025 متجر كرستال بلس | جميع الحقوق محفوظة.
+    </footer>
+  </div>
+</body>
+</html>
