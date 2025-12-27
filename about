@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="robots" content="index,follow" />
+  <title>من نحن | متجر كرستال بلس</title>
+  
+  <style>
+    .about-container {
+      --primary: #01a23f;
+      --bg-dark: #0f172a;
+      --card-dark: #1e293b;
+      --text-main: #ffffff;
+      --text-muted: #94a3b8;
+      --border-line: rgba(255,255,255,0.1);
+
+      max-width: 850px;
+      margin: 40px auto;
+      padding: 30px 25px;
+      background: var(--bg-dark);
+      color: var(--text-main);
+      font-family: 'Segoe UI', Tahoma, sans-serif;
+      border-radius: 16px;
+      line-height: 1.8;
+      border: 1px solid var(--border-line);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    }
+
+    .about-header {
+      text-align: center;
+      border-bottom: 2px solid var(--primary);
+      padding-bottom: 20px;
+      margin-bottom: 30px;
+    }
+
+    .about-header h1 { font-size: 28px; margin: 0; color: var(--text-main); }
+
+    .about-section {
+      background: var(--card-dark);
+      padding: 25px;
+      border-radius: 12px;
+      margin-bottom: 20px;
+      border: 1px solid var(--border-line);
+    }
+
+    .about-section h2 {
+      font-size: 19px;
+      color: var(--primary);
+      margin: 0 0 15px 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .en-label { font-size: 11px; color: var(--text-muted); text-transform: uppercase; letter-spacing: 1px; }
+
+    p { font-size: 16px; margin: 15px 0; color: var(--text-main); }
+
+    .highlight { color: var(--primary); font-weight: bold; }
+
+    .identity-box {
+      background: rgba(1, 162, 63, 0.05);
+      border-right: 4px solid var(--primary);
+      padding: 20px;
+      border-radius: 4px;
+      margin-top: 20px;
+    }
+
+    .identity-item {
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 1px solid var(--border-line);
+      padding: 8px 0;
+    }
+
+    .identity-item:last-child { border-bottom: none; }
+  </style>
+</head>
+<body>
+  <div class="about-container">
+    <header class="about-header">
+      <h1>من نحن</h1>
+      <p style="color: var(--text-muted); font-size: 14px;">About Us - Kristal Plus Store</p>
+    </header>
+
+    <section class="about-section">
+      <h2>هويتنا التجارية <span class="en-label">Our Identity</span></h2>
+      <p>
+        مرحباً بكم في <strong>متجر كرستال بلس</strong>، الوجهة السعودية المتخصصة في توفير أجود <strong class="highlight">الأدوات المكتبية</strong>. نحن نفخر بكوننا جزءاً من <strong>مؤسسة أريج عبدالله المالكي التجارية</strong>، ونعمل انطلاقاً من شغفنا بتقديم حلول مكتبية متكاملة تخدم الأفراد والمؤسسات داخل المملكة.
+      </p>
+    </section>
+
+    <section class="about-section">
+      <h2>التزامنا القانوني <span class="en-label">Legal Compliance</span></h2>
+      <p>
+        نحن نؤمن بأن الشفافية هي أساس بناء الثقة مع عملائنا. متجرنا مسجل وموثق رسمياً وفق الأنظمة السعودية، ونلتزم بكافة معايير وزارة التجارة وحماية المستهلك لضمان تجربة تسوق آمنة وموثوقة.
+      </p>
+      
+      <div class="identity-box">
+        <div class="identity-item">
+          <span>الكيان القانوني:</span>
+          <span class="highlight">مؤسسة أريج عبدالله المالكي</span>
+        </div>
+        <div class="identity-item">
+          <span>السجل التجاري (CR):</span>
+          <span class="highlight">7052755050</span>
+        </div>
+        <div class="identity-item">
+          <span>توثيق المركز السعودي للأعمال:</span>
+          <span class="highlight">0000205221</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-section">
+      <h2>رؤيتنا <span class="en-label">Our Vision</span></h2>
+      <p>
+        نهدف إلى أن نكون الخيار الأول في المملكة العربية السعودية لكل من يبحث عن الجودة والموثوقية في الأدوات المكتبية، مع ضمان <strong class="highlight">أمان الدفع وسرعة التوصيل</strong> لجميع مدن المملكة.
+      </p>
+    </section>
+
+    <footer style="text-align: center; margin-top: 30px; font-size: 12px; color: var(--text-muted);">
+      نشحن بكل فخر من الرياض إلى كافة أنحاء المملكة العربية السعودية.
+      <br>
+      آخر تحديث: ديسمبر 2025
+    </footer>
+  </div>
+</body>
+</html>
