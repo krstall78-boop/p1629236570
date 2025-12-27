@@ -154,65 +154,8 @@
             height: auto;
         }
 
-        .main-footer {
-            background: #fff;
-            margin-top: 50px;
-            padding: 60px 0 20px;
-            border-top: 1px solid #eee;
-        }
-
-        .footer-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 40px;
-        }
-
-        .footer-col h4 {
-            font-size: 16px;
-            margin-bottom: 20px;
-            position: relative;
-            padding-right: 15px;
-        }
-
-        .footer-col h4::after {
-            content: '';
-            position: absolute;
-            right: 0;
-            top: 0;
-            bottom: 0;
-            width: 3px;
-            background: var(--salla-green);
-        }
-
-        .footer-col ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-
-        .footer-col ul li {
-            margin-bottom: 12px;
-            font-size: 14px;
-            color: #666;
-        }
-
-        .footer-col ul li a {
-            color: inherit;
-            text-decoration: none;
-        }
-
-        .copyright {
-            text-align: center;
-            padding: 30px 0;
-            border-top: 1px solid #f5f5f5;
-            margin-top: 40px;
-            font-size: 13px;
-            color: #999;
-        }
-
         @media (max-width: 768px) {
             .product-card { grid-template-columns: 1fr; }
-            .footer-grid { grid-template-columns: 1fr; }
         }
     </style>
 </head>
@@ -228,8 +171,8 @@
 
 <div class="container">
     <div class="breadcrumbs">
-        <a href="https://kristalpls.com/">الرئيسية</a> / 
-        <a href="https://kristalpls.com/sww/c1039990292">أدوات مكتبية</a> / 
+        <a href="index.html">الرئيسية</a> / 
+        أدوات مكتبية / 
         حامل أقلام مكتبي شبكي معدني - أسود
     </div>
 
@@ -273,47 +216,43 @@
     </main>
 </div>
 
-<footer class="main-footer">
-    <div class="container">
-        <div class="footer-grid">
-            <div class="footer-col">
-                <h4>من نحن</h4>
-                <ul>
-                    <li>متجر كرستال بلس متخصص في بيع الأدوات المكتبية داخل المملكة العربية السعودية.</li>
-                </ul>
-            </div>
-
-            <div class="footer-col">
-                <h4>روابط هامة</h4>
-                <ul>
-                    <li><a href="https://kristalpls.com/business-identity/page-143434545">هوية النشاط التجاري</a></li>
-                    <li><a href="https://kristalpls.com/terms-and-conditions/page-1737267115">الشروط والأحكام</a></li>
-                    <li><a href="https://kristalpls.com/shipping-policy/page-935855241">سياسة الشحن والتوصيل</a></li>
-                    <li><a href="https://kristalpls.com/refund-policy/page-1047709984">سياسة الاستبدال والاسترجاع</a></li>
-                    <li><a href="https://kristalpls.com/privacy-policy/page-1561588918">سياسة الخصوصية</a></li>
-                    <li><a href="https://kristalpls.com/contact/page-1077067452">اتصل بنا</a></li>
-                </ul>
-            </div>
-
-            <div class="footer-col">
-                <h4>تواصل معنا</h4>
-                <ul>
-                    <li>الرياض – المملكة العربية السعودية</li>
-                    <li>info@kristalpls.com</li>
-                    <li>سجل تجاري: 7052755050</li>
-                </ul>
-            </div>
+<footer style="background-color: #ffffff; border-top: 1px solid #eeeeee; padding: 40px 20px; margin-top: 50px; text-align: center; direction: rtl;">
+    <div style="max-width: 1200px; margin: 0 auto; display: flex; flex-wrap: wrap; justify-content: space-around; gap: 30px;">
+        
+        <div style="flex: 1; min-width: 200px; text-align: right;">
+            <h4 style="color: #333; margin-bottom: 20px; font-size: 16px; border-right: 3px solid #00b286; padding-right: 10px;">روابط هامة</h4>
+            <ul style="list-style: none; padding: 0; line-height: 2;">
+                <li><a href="business-identity.html" style="color: #666; text-decoration: none; font-size: 14px;">هوية النشاط التجاري</a></li>
+                <li><a href="terms-and-conditions.html" style="color: #666; text-decoration: none; font-size: 14px;">الشروط والأحكام</a></li>
+                <li><a href="shipping-policy.html" style="color: #666; text-decoration: none; font-size: 14px;">سياسة الشحن والتوصيل</a></li>
+                <li><a href="refund-policy.html" style="color: #666; text-decoration: none; font-size: 14px;">سياسة الاستبدال والاسترجاع</a></li>
+                <li><a href="privacy-policy.html" style="color: #666; text-decoration: none; font-size: 14px;">سياسة الخصوصية</a></li>
+                <li><a href="contact.html" style="color: #666; text-decoration: none; font-size: 14px;">اتصل بنا</a></li>
+            </ul>
         </div>
 
-        <div class="copyright">
-            جميع الحقوق محفوظة © متجر كرستال بلس 2025
+        <div style="flex: 1; min-width: 200px; text-align: right;">
+            <h4 style="color: #333; margin-bottom: 20px; font-size: 16px; border-right: 3px solid #00b286; padding-right: 10px;">عن المتجر</h4>
+            <p style="color: #666; font-size: 14px; line-height: 1.8;">
+                متجر كرستال بلس تابع لمؤسسة أريج عبدالله المالكي التجارية، متخصصون في توفير أفضل الأدوات المكتبية بجودة عالية وأسعار منافسة داخل المملكة العربية السعودية.
+            </p>
         </div>
+
+        <div style="flex: 1; min-width: 250px; text-align: right;">
+            <h4 style="color: #333; margin-bottom: 20px; font-size: 16px; border-right: 3px solid #00b286; padding-right: 10px;">تواصل معنا</h4>
+            <p style="color: #666; font-size: 14px; margin: 5px 0;">المقر: الرياض، حي الدار البيضاء - شارع الجدين</p>
+            <p style="color: #666; font-size: 14px; margin: 5px 0;">البريد: info@kristalpls.com</p>
+            <p style="color: #666; font-size: 14px; margin: 5px 0;">سجل تجاري: 7052755050</p>
+            <p style="color: #666; font-size: 14px; margin: 5px 0;">واتساب: 966559032548+</p>
+        </div>
+    </div>
+
+    <div style="margin-top: 30px; border-top: 1px solid #f5f5f5; padding-top: 20px;">
+        <p style="color: #aaa; font-size: 13px;">جميع الحقوق محفوظة © متجر كرستال بلس 2025</p>
     </div>
 </footer>
 
 <script>
-    // هذا الكود سيعمل فقط لتعزيز التجربة إذا كانت الجافا سكريبت مفعلة، 
-    // وإذا كانت معطلة سينتقل الرابط مباشرة لصفحة السلة cart.html التي تحتوي المنتج مسبقاً.
     document.getElementById('addToCartBtn').addEventListener('click', function() {
         const product = {
             id: 'p1629236570',
