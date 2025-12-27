@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="robots" content="index,follow" />
+  <title>سياسة الشحن والتوصيل | متجر كرستال بلس</title>
+  
+  <style>
+    /* تنسيق معزول لضمان الوضوح والتباين العالي للفحص البشري */
+    .ship-container {
+      --primary: #01a23f;
+      --bg-dark: #0f172a;
+      --card-dark: #1e293b;
+      --text-main: #ffffff;
+      --text-muted: #94a3b8;
+      --border-line: rgba(255,255,255,0.1);
+
+      max-width: 850px;
+      margin: 40px auto;
+      padding: 30px 25px;
+      background: var(--bg-dark);
+      color: var(--text-main);
+      font-family: 'Segoe UI', Tahoma, sans-serif;
+      border-radius: 16px;
+      line-height: 1.8;
+      border: 1px solid var(--border-line);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    }
+
+    .ship-header {
+      text-align: center;
+      border-bottom: 2px solid var(--primary);
+      padding-bottom: 20px;
+      margin-bottom: 30px;
+    }
+
+    .ship-header h1 { font-size: 28px; margin: 0; color: var(--text-main); }
+
+    .ship-section {
+      background: var(--card-dark);
+      padding: 20px;
+      border-radius: 12px;
+      margin-bottom: 20px;
+      border: 1px solid var(--border-line);
+    }
+
+    .ship-section h2 {
+      font-size: 19px;
+      color: var(--primary);
+      margin: 0 0 15px 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .en-label { font-size: 11px; color: var(--text-muted); text-transform: uppercase; letter-spacing: 1px; }
+
+    .ship-section p, .ship-section li { color: var(--text-main); font-size: 15.5px; }
+
+    .highlight { color: var(--primary); font-weight: bold; }
+
+    .ship-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-top: 10px; }
+    @media (max-width: 600px) { .ship-grid { grid-template-columns: 1fr; } }
+
+    .stat-card {
+      background: rgba(255,255,255,0.03);
+      padding: 15px;
+      border-radius: 8px;
+      text-align: center;
+      border: 1px solid var(--border-line);
+    }
+
+    .stat-card span { display: block; }
+    .stat-title { font-size: 12px; color: var(--text-muted); }
+    .stat-value { font-size: 16px; font-weight: bold; color: var(--primary); }
+
+    .contact-box {
+      background: rgba(1, 162, 63, 0.05);
+      border-right: 4px solid var(--primary);
+      padding: 20px;
+      margin-top: 30px;
+      border-radius: 4px;
+    }
+
+    strong { color: #ffffff; }
+  </style>
+</head>
+<body>
+  <div class="ship-container">
+    <header class="ship-header">
+      <h1>سياسة الشحن والتوصيل</h1>
+      <p style="color: var(--text-muted); font-size: 14px;">Shipping & Delivery Policy - Kristal Plus Store</p>
+    </header>
+
+    <section class="ship-section">
+      <h2>نطاق الخدمة <span class="en-label">Shipping Origin & Destination</span></h2>
+      <p>يتم تجهيز وشحن جميع الطلبات من مستودعاتنا في <strong>الرياض، المملكة العربية السعودية</strong>. نحن نخدم العملاء داخل <span class="highlight">المملكة العربية السعودية فقط</span>، ولا نوفر شحناً دولياً حالياً.</p>
+    </section>
+
+    <section class="ship-section">
+      <h2>أوقات الشحن والتوصيل <span class="en-label">Delivery Timeline</span></h2>
+      <div class="ship-grid">
+        <div class="stat-card">
+          <span class="stat-title">وقت التجهيز (Handling Time)</span>
+          <span class="stat-value">0 - 24 ساعة عمل</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-title">وقت التوصيل (Transit Time)</span>
+          <span class="stat-value">2 - 5 أيام عمل</span>
+        </div>
+      </div>
+      <p style="margin-top:15px; font-size: 14.5px;">
+        <span class="highlight">ملاحظة:</span> قد تختلف مدة التوصيل في بعض المناطق النائية حسب تغطية شركة الشحن والظروف التشغيلية.
+      </p>
+      <p style="margin-top:5px; font-size: 13px; color: var(--text-muted);">* الطلبات التي تتم خلال العطلات الرسمية يتم البدء في تجهيزها في أول يوم عمل تالٍ.</p>
+    </section>
+
+    <section class="ship-section">
+      <h2>تكلفة الشحن <span class="en-label">Shipping Cost</span></h2>
+      <p>يقدم متجر كرستال بلس <span class="highlight">شحناً مجانياً بالكامل</span> لجميع الطلبات داخل المملكة العربية السعودية، لضمان تجربة تسوق شفافة وبدون تكاليف خفية.</p>
+    </section>
+
+    <section class="ship-section">
+      <h2>شركاء اللوجستيات <span class="en-label">Our Carriers</span></h2>
+      <p>يتم الشحن عبر مقدمي خدمات اللوجستيات المعتمدين (أرامكس، سمسا). ستصلك معلومات تتبع الشحنة فور صدور بوليصة الشحن عبر بريدك الإلكتروني المسجل.</p>
+    </section>
+
+    <div class="contact-box">
+      <strong>للاستفسار عن حالة شحنتك:</strong><br>
+      البريد الإلكتروني: <span dir="ltr"><strong>info&#64;kristalpls&#46;com</strong></span><br>
+      هاتف الدعم (واتساب): +966559032548
+    </div>
+
+    <p style="font-size:13px; color:var(--text-muted); text-align:center; margin-top:30px;">
+      هذه السياسة جزء من التزامنا بمعايير التجارة الإلكترونية المعتمدة في المملكة العربية السعودية.
+    </p>
+
+    <footer style="text-align: center; margin-top: 10px; font-size: 11px; color: var(--text-muted);">
+      © 2025 متجر كرستال بلس | سجل تجاري: 7052755050
+    </footer>
+  </div>
+</body>
+</html>
