@@ -40,13 +40,15 @@ body{
   margin:0;
   font-family:Tahoma,Arial,sans-serif;
   background:#f8f8f8;
-  color:#333
+  color:#333;
 }
+
 .container{
   max-width:1100px;
   margin:auto;
-  padding:20px
+  padding:20px;
 }
+
 .card{
   background:#fff;
   border:1px solid #eee;
@@ -54,16 +56,24 @@ body{
   padding:25px;
   display:grid;
   grid-template-columns:1fr 1fr;
-  gap:30px
+  gap:30px;
 }
+
 img{
   max-width:100%;
   border-radius:8px;
   border:1px solid #eee;
   display:block;
-  margin:0 auto
+  margin:0 auto;
 }
 
+/* محاكاة عرض محتوى سلة */
+.product-content{
+  max-width:680px;
+  margin:0 auto;
+}
+
+/* Generic */
 .brand{
   text-align:center;
   color:#777;
@@ -71,42 +81,45 @@ img{
   font-weight:500;
 }
 
+/* العنوان */
 h1{
   text-align:center;
   font-size:22px;
   font-weight:600;
   color:#00b286;
-  margin:10px 0
+  margin:10px 0;
 }
 
+/* شامل الضريبة */
 .tax{
   text-align:center;
   color:#666;
   font-size:16px;
   font-weight:600;
-  margin-bottom:8px
+  margin-bottom:8px;
 }
 
 .price{
   text-align:center;
   font-size:24px;
   font-weight:600;
-  direction:ltr
+  direction:ltr;
 }
+
 .stock{
   text-align:center;
   color:#00b286;
-  font-weight:bold;
-  margin-bottom:20px
+  font-weight:600;
+  margin-bottom:20px;
 }
 
-/* ✅ الوصف ثقيل + نفس التنسيق */
+/* الوصف مطابق لسلة */
 .desc{
   line-height:2;
   font-size:17px;
   font-weight:700;
   color:#333;
-  white-space:pre-line
+  white-space:pre-line;
 }
 
 .btn{
@@ -118,10 +131,13 @@ h1{
   padding:14px;
   border-radius:8px;
   font-weight:bold;
-  margin-top:25px
+  margin-top:25px;
 }
+
 @media(max-width:768px){
-  .card{grid-template-columns:1fr}
+  .card{
+    grid-template-columns:1fr;
+  }
 }
 </style>
 </head>
@@ -136,14 +152,14 @@ h1{
            alt="حامل أقلام مكتبي شبكي معدني - أسود">
     </div>
 
-    <div>
+    <div class="product-content">
       <div class="brand">Generic</div>
       <h1>حامل أقلام مكتبي شبكي معدني - أسود</h1>
 
       <div class="tax">شامل الضريبة</div>
       <div class="price">5 SAR</div>
 
-      <div class="stock">✓ متوفر في المخزون</div>
+      <div class="stock">متوفر في المخزون</div>
 
       <div class="desc">
 حامل أقلام مكتبي شبكي معدني – منظم دائري للأدوات المكتبية، مصنوع من هيكل عملي من المعدن الشبكي المتين مع طلاء أسود مطفي وقاعدة مستقرة، ومصمم لتنظيم أدوات المكتب بشكل أنيق ومرتب. المنتج متوفر وجاهز للشحن داخل المملكة العربية السعودية.
