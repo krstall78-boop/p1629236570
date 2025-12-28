@@ -14,7 +14,7 @@
   "@context": "https://schema.org",
   "@type": "Product",
   "name": "حامل أقلام مكتبي شبكي معدني - أسود",
-  "description": "حامل أقلام مكتبي شبكي معدني – منظم دائري للأدوات المكتبية، مصنوع من هيكل عملي من المعدن الشبكي المتين مع طلاء أسود مطفي وقاعدة مستقرة، ومصمم لتنظيم أدوات المكتب بشكل أنيق ومرتب. المنتج متوفر وجاهز للشحن داخل المملكة العربية السعودية.\n\n\nالمواصفات:\n\nالمادة: معدن شبكي مطلي\n\nالاستخدام: تنظيم الأقلام، المقصات، وأدوات المكتب الأساسية\n\nالتصميم: حواف منحنية لسلامة الاستخدام، وهيكل شبكي يسمح برؤية الأدوات بوضوح\n\n\nمعلومات الشحن والاسترجاع:\n\nمدة الشحن: يتم تجهيز وشحن الطلب خلال 2 – 5 أيام عمل داخل المملكة العربية السعودية\n\nسياسة الاسترجاع: يمكن طلب الاستبدال أو الاسترجاع خلال 7 أيام من تاريخ الاستلام\n\nاسترداد الأموال: يتم إعادة المبلغ إلى وسيلة الدفع المستخدمة خلال مدة تصل إلى 14 يوم عمل من تاريخ قبول طلب الاسترجاع",
+  "description": "حامل أقلام مكتبي شبكي معدني – منظم دائري للأدوات المكتبية، مصنوع من هيكل عملي من المعدن الشبكي المتين مع طلاء أسود مطفي وقاعدة مستقرة، ومصمم لتنظيم أدوات المكتب بشكل أنيق ومرتب. المنتج متوفر وجاهز للشحن داخل المملكة العربية السعودية.\n\nالمواصفات:\n\nالمادة: معدن شبكي مطلي\n\nالاستخدام: تنظيم الأقلام، المقصات، وأدوات المكتب الأساسية\n\nالتصميم: حواف منحنية لسلامة الاستخدام، وهيكل شبكي يسمح برؤية الأدوات بوضوح\n\nمعلومات الشحن والاسترجاع:\n\nمدة الشحن: يتم تجهيز وشحن الطلب خلال 2 – 5 أيام عمل داخل المملكة العربية السعودية\n\nسياسة الاسترجاع: يمكن طلب الاستبدال أو الاسترجاع خلال 7 أيام من تاريخ الاستلام\n\nاسترداد الأموال: يتم إعادة المبلغ إلى وسيلة الدفع المستخدمة خلال مدة تصل إلى 14 يوم عمل من تاريخ قبول طلب الاسترجاع",
   "image": [
     "https://cdn.salla.sa/vDBOo/085ae502-5bca-4364-adb1-5fe8147b2a7a-1000x903.13111545988-8nKTTAaDlF7gTEBpmGbKD4vQScFNJo2562wfn7WB.jpg"
   ],
@@ -39,13 +39,22 @@ body{margin:0;font-family:Tahoma,Arial,sans-serif;background:#f8f8f8;color:#333}
 .container{max-width:1100px;margin:auto;padding:20px}
 .card{background:#fff;border:1px solid #eee;border-radius:10px;padding:25px;display:grid;grid-template-columns:1fr 1fr;gap:30px}
 img{max-width:100%;border-radius:8px;border:1px solid #eee;display:block;margin:0 auto}
-.brand{text-align:center;color:#777;font-size:13px}
-h1{text-align:center;font-size:20px;margin:10px 0}
-.tax{text-align:center;color:#777;font-size:13px;margin-bottom:6px}
-.price{text-align:center;font-size:24px;font-weight:600;direction:ltr}
-.stock{text-align:center;color:#00b286;font-weight:bold;margin-bottom:20px}
+
+.title-wrapper{text-align:center}
+.title{font-weight:700}
+.title--xx-large{font-size:20px}
+.title--small{font-size:13px}
+.color-grey{color:#777}
+.mb-0{margin:0}
+.mb-10{margin-bottom:10px}
+
+.price-wrapper-info{font-size:24px;font-weight:600;direction:ltr}
+
+.stock{text-align:center;color:#00b286;font-weight:bold;margin:15px 0}
 .desc{line-height:1.9;font-size:14px;color:#444;white-space:pre-line}
+
 .btn{display:block;background:#00b286;color:#fff;text-decoration:none;text-align:center;padding:14px;border-radius:8px;font-weight:bold;margin-top:25px}
+
 @media(max-width:768px){.card{grid-template-columns:1fr}}
 </style>
 </head>
@@ -61,33 +70,39 @@ h1{text-align:center;font-size:20px;margin:10px 0}
     </div>
 
     <div>
-      <div class="brand">Generic</div>
-      <h1>حامل أقلام مكتبي شبكي معدني - أسود</h1>
 
-      <div class="tax">شامل الضريبة</div>
-      <div class="price">5 SAR</div>
+      <!-- ✅ عنوان مطابق لقالب سلة -->
+      <div class="title-wrapper">
+        <a>
+          <img class="loaded"
+               src="https://cdn.salla.sa/vDBOo/PdLAZs974LqKS8kTwVSwb5zVGhbstReakIQujnrV.png"
+               alt="Generic">
+        </a>
+
+        <h2 class="title title--xx-large mb-0">
+          حامل أقلام مكتبي شبكي معدني - أسود
+        </h2>
+
+        <h2 class="title title--small color-grey mb-10">
+          شامل الضريبة
+        </h2>
+
+        <div class="price-wrapper-info price-wrapper--large product-main-price">
+          <span>5 SAR</span>
+        </div>
+      </div>
 
       <div class="stock">✓ متوفر في المخزون</div>
 
       <div class="desc">
 حامل أقلام مكتبي شبكي معدني – منظم دائري للأدوات المكتبية، مصنوع من هيكل عملي من المعدن الشبكي المتين مع طلاء أسود مطفي وقاعدة مستقرة، ومصمم لتنظيم أدوات المكتب بشكل أنيق ومرتب. المنتج متوفر وجاهز للشحن داخل المملكة العربية السعودية.
-
-
 المواصفات:
-
 المادة: معدن شبكي مطلي
-
 الاستخدام: تنظيم الأقلام، المقصات، وأدوات المكتب الأساسية
-
 التصميم: حواف منحنية لسلامة الاستخدام، وهيكل شبكي يسمح برؤية الأدوات بوضوح
-
-
 معلومات الشحن والاسترجاع:
-
 مدة الشحن: يتم تجهيز وشحن الطلب خلال 2 – 5 أيام عمل داخل المملكة العربية السعودية
-
 سياسة الاسترجاع: يمكن طلب الاستبدال أو الاسترجاع خلال 7 أيام من تاريخ الاستلام
-
 استرداد الأموال: يتم إعادة المبلغ إلى وسيلة الدفع المستخدمة خلال مدة تصل إلى 14 يوم عمل من تاريخ قبول طلب الاسترجاع
       </div>
 
@@ -97,6 +112,7 @@ h1{text-align:center;font-size:20px;margin:10px 0}
          rel="noopener noreferrer">
         الانتقال لصفحة الشراء
       </a>
+
     </div>
 
   </div>
