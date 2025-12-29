@@ -34,16 +34,94 @@
 </script>
 
 <style>
-body { margin: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #fff; color: #333; }
-.container { max-width: 1200px; margin: auto; padding: 40px 20px; }
-.card { display: grid; grid-template-columns: 1fr 1fr; gap: 50px; align-items: start; }
-img { max-width: 100%; border-radius: 4px; border: 1px solid #f2f2f2; }
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #fff;
+  color: #333;
+}
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px 20px;
+}
+.card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  align-items: start;
+}
+img {
+  max-width: 100%;
+  border-radius: 4px;
+  border: 1px solid #f2f2f2;
+}
+.brand {
+  color: #000;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+h1 {
+  font-size: 20px;
+  color: #00b286;
+  margin: 0 0 5px 0;
+  font-weight: 600;
+}
+.tax {
+  color: #888;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+.price {
+  font-size: 22px;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 25px;
+}
+.desc {
+  line-height: 1.9;
+  font-size: 17px;
+  color: #4e4e4e;
+}
+.desc span,
+.desc strong {
+  display: block;
+  margin-bottom: 8px;
+}
+.stock-text {
+  color: #00b286;
+  font-weight: bold;
+}
+.btn {
+  display: block;
+  background: #00b286;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  padding: 15px;
+  border-radius: 6px;
+  font-weight: 600;
+  margin-top: 35px;
+  font-size: 16px;
+}
+@media(max-width: 768px) {
+  .card {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .container {
+    padding: 20px;
+  }
+}
 </style>
 </head>
 
 <body>
+
 <div class="container">
   <div class="card">
+
     <div>
       <img
         src="https://cdn.salla.sa/vDBOo/085ae502-5bca-4364-adb1-5fe8147b2a7a-1000x903.13111545988-8nKTTAaDlF7gTEBpmGbKD4vQScFNJo2562wfn7WB.jpg"
@@ -51,7 +129,43 @@ img { max-width: 100%; border-radius: 4px; border: 1px solid #f2f2f2; }
         loading="eager"
       >
     </div>
+
+    <div>
+      <div class="brand">Generic</div>
+      <h1>حامل أقلام مكتبي شبكي معدني - أسود</h1>
+      <div class="tax">شامل الضريبة</div>
+      <div class="price">SAR 5</div>
+
+      <div class="desc">
+        <span class="stock-text">متوفر في المخزون</span>
+
+        <span>حامل أقلام مكتبي شبكي معدني – منظم دائري للأدوات المكتبية.</span>
+        <span>مصنوع من هيكل عملي من المعدن الشبكي المتين مع طلاء أسود مطفي وقاعدة مستقرة.</span>
+        <span>مصمم لتنظيم أدوات المكتب بشكل أنيق ومرتب.</span>
+        <span>المنتج متوفر وجاهز للشحن داخل المملكة العربية السعودية.</span>
+
+        <strong>المواصفات:</strong>
+        <span>المادة: معدن شبكي مطلي.</span>
+        <span>الاستخدام: تنظيم الأقلام، المقصات، وأدوات المكتب الأساسية.</span>
+        <span>التصميم: حواف منحنية لسلامة الاستخدام.</span>
+        <span>هيكل شبكي يسمح برؤية الأدوات بوضوح.</span>
+
+        <strong>معلومات الشحن والاسترجاع:</strong>
+        <span>مدة الشحن: يتم تجهيز وشحن الطلب خلال 2 – 5 أيام عمل داخل المملكة العربية السعودية.</span>
+        <span>سياسة الاسترجاع: يمكن طلب الاستبدال أو الاسترجاع خلال 7 أيام من تاريخ الاستلام.</span>
+        <span>استرداد الأموال: يتم إعادة المبلغ إلى وسيلة الدفع المستخدمة خلال مدة تصل إلى 14 يوم عمل من تاريخ قبول طلب الاسترجاع.</span>
+      </div>
+
+      <a class="btn"
+         href="https://kristalpls.com/metal-mesh-pen-holder/p1180395020"
+         target="_blank"
+         rel="noopener noreferrer">
+        الانتقال لصفحة الشراء
+      </a>
+    </div>
+
   </div>
 </div>
+
 </body>
 </html>
